@@ -10,7 +10,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Montserrat:wght@500;600;700&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" href="styles.css?v=12" />
+  <link rel="stylesheet" href="styles.css?v=17" />
 </head>
 
 <body>
@@ -474,7 +474,7 @@
 
       <div class="shell areas-inner">
 
-        <div>
+        <div class="areas-copy">
 
           <p class="eyebrow">
             Mobile service area
@@ -485,29 +485,33 @@
           </h2>
 
           <p>
-            Not sure whether ACAMADI covers your postcode?
-            Send your location and the service you need for a quick answer.
+            Enter your postcode to see whether you're within our usual mobile service area.
           </p>
 
         </div>
 
+        <div class="postcode-checker">
+          <form class="postcode-form" data-postcode-form novalidate>
+            <label class="sr-only" for="coverage-postcode">Your postcode</label>
+            <div class="postcode-input-row">
+              <input
+                id="coverage-postcode"
+                name="postcode"
+                type="text"
+                autocomplete="postal-code"
+                inputmode="text"
+                placeholder="e.g. SG12 9XX"
+                aria-describedby="postcode-help"
+                required
+              >
+              <button class="btn btn-light" type="submit">Check coverage</button>
+            </div>
+            <p class="postcode-help" id="postcode-help">
+              We'll use your postcode only to check the service area.
+            </p>
+          </form>
 
-        <div class="areas-actions">
-
-          <a
-            class="btn btn-light"
-            href="contact.html"
-          >
-            Check your postcode
-          </a>
-
-          <a
-            class="phone-link"
-            href="tel:+447930369955"
-          >
-            07930 369955
-          </a>
-
+          <div class="postcode-result" data-postcode-result aria-live="polite"></div>
         </div>
 
       </div>
@@ -640,7 +644,7 @@
   </footer>
 
 
-  <script src="script.js"></script>
+  <script src="script.js?v=4"></script>
 
 </body>
 </html>
