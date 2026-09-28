@@ -78,7 +78,7 @@ if (postcodeForm && postcodeResult) {
 
   const showPostcodeResult = (status, title, message, postcode) => {
     const encoded = encodeURIComponent(postcode || '');
-    const buttonLabel = status === 'covered' ? 'Get a quote' : 'Ask about your area';
+    const buttonLabel = status === 'covered' ? 'Request a quote' : 'Ask about your area';
 
     postcodeResult.className = 'postcode-result is-visible ' + status;
     postcodeResult.innerHTML =
