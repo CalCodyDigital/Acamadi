@@ -5560,3 +5560,173 @@ body .technology-info-grid p {
     flex-direction: column;
   }
 }
+
+
+/* =========================================================
+   POSTCODE COVERAGE CHECKER
+   ========================================================= */
+
+.areas-inner {
+  display: grid;
+  grid-template-columns: minmax(0, .9fr) minmax(430px, 1.1fr);
+  gap: 64px;
+  align-items: center;
+}
+
+.areas-copy p:last-child {
+  max-width: 620px;
+}
+
+.postcode-checker {
+  width: 100%;
+  max-width: 620px;
+  justify-self: end;
+}
+
+.postcode-input-row {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 10px;
+}
+
+.postcode-form input {
+  width: 100%;
+  min-height: 56px;
+  padding: 0 18px;
+  border: 1px solid rgba(255,255,255,.26);
+  border-radius: 999px;
+  background: rgba(255,255,255,.1);
+  color: #fff;
+  font: inherit;
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: .04em;
+  outline: none;
+  text-transform: uppercase;
+}
+
+.postcode-form input::placeholder {
+  color: rgba(255,255,255,.58);
+  text-transform: none;
+  letter-spacing: 0;
+  font-weight: 500;
+}
+
+.postcode-form input:focus {
+  border-color: rgba(255,255,255,.7);
+  box-shadow: 0 0 0 3px rgba(255,255,255,.1);
+}
+
+.postcode-form .btn {
+  min-height: 56px;
+  border: 0;
+  cursor: pointer;
+}
+
+.postcode-form .btn:disabled {
+  cursor: wait;
+  opacity: .72;
+}
+
+.postcode-help {
+  margin: 9px 0 0 !important;
+  color: rgba(255,255,255,.58) !important;
+  font-size: 10px;
+}
+
+.postcode-result {
+  display: none;
+}
+
+.postcode-result.is-visible {
+  display: grid;
+  grid-template-columns: 36px 1fr;
+  gap: 14px;
+  margin-top: 16px;
+  padding: 17px 18px;
+  border: 1px solid rgba(255,255,255,.2);
+  border-radius: 12px;
+  background: rgba(7,23,36,.14);
+}
+
+.postcode-result-icon {
+  display: grid;
+  place-items: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: #fff;
+  color: var(--navy);
+  font-size: 15px;
+  font-weight: 900;
+}
+
+.postcode-result-copy strong {
+  display: block;
+  margin-bottom: 3px;
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+}
+
+.areas .postcode-result-copy p {
+  max-width: none;
+  margin: 0 0 7px;
+  color: rgba(255,255,255,.72);
+  font-size: 11px;
+  line-height: 1.55;
+}
+
+.postcode-result-link {
+  display: inline-flex;
+  gap: 6px;
+  align-items: center;
+  color: #fff;
+  font-size: 11px;
+  font-weight: 800;
+}
+
+.postcode-result-link span {
+  color: var(--sand-light);
+}
+
+.postcode-result.outside .postcode-result-icon,
+.postcode-result.error .postcode-result-icon {
+  background: rgba(255,255,255,.16);
+  color: #fff;
+}
+
+.sr-only {
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  clip: rect(0,0,0,0) !important;
+  white-space: nowrap !important;
+  border: 0 !important;
+}
+
+@media (max-width: 920px) {
+  .areas-inner {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .postcode-checker {
+    max-width: none;
+    justify-self: stretch;
+  }
+}
+
+@media (max-width: 620px) {
+  .postcode-input-row {
+    grid-template-columns: 1fr;
+  }
+
+  .postcode-form input,
+  .postcode-form .btn {
+    border-radius: 10px;
+  }
+}
