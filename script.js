@@ -41,3 +41,17 @@ if (cameraTabs.length) {
     });
   });
 }
+
+
+/* Contact enquiry prefill */
+const enquiryForm=document.querySelector('[data-enquiry-form]');
+if(enquiryForm){
+  const params=new URLSearchParams(window.location.search);
+  const service=params.get('service');
+  const camera=params.get('camera');
+  const serviceSelect=enquiryForm.querySelector('[name="service"]');
+  const cameraField=document.getElementById('camera-field');
+  const cameraInput=enquiryForm.querySelector('[name="camera_model"]');
+  if(service&&serviceSelect){const opt=[...serviceSelect.options].find(o=>o.value===service);if(opt)serviceSelect.value=service;}
+  if(camera&&cameraInput&&cameraField){cameraInput.value=camera;cameraField.hidden=false;if(serviceSelect)serviceSelect.value='Dash Cam Supply & Installation';}
+}
