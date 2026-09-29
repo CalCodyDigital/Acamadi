@@ -1,22 +1,22 @@
 :root {
-  --navy: #071724;
-  --navy-2: #0c2234;
-  --ink: #13202b;
-  --muted: #65717c;
+  --navy: #28397e;
+  --navy-2: #1f2d67;
+  --ink: #202b4a;
+  --muted: #68728b;
 
-  --sand: #c8a46f;
-  --sand-light: #e8d7bc;
+  --sand: #eecc6c;
+  --sand-light: #f1d47f;
 
-  --cream: #f5f2ec;
+  --cream: #f5f6fa;
   --white: #ffffff;
 
-  --line: rgba(19, 32, 43, 0.12);
+  --line: rgba(40, 57, 126, 0.14);
 
   --shell: 1180px;
 
   --radius: 8px;
 
-  --shadow: 0 18px 60px rgba(5, 20, 32, 0.14);
+  --shadow: 0 18px 60px rgba(31, 45, 103, 0.18);
 }
 
 
@@ -92,7 +92,7 @@ select {
 
 
 .eyebrow.dark {
-  color: #9a7746;
+  color: #9a7727;
 }
 
 
@@ -131,7 +131,7 @@ h2 {
 
   z-index: 50;
 
-  background: rgba(7, 23, 36, 0.9);
+  background: rgba(40, 57, 126, 0.94);
 
   border-bottom: 1px solid rgba(255, 255, 255, 0.08);
 
@@ -258,16 +258,16 @@ h2 {
 
     linear-gradient(
       90deg,
-      rgba(5, 18, 29, 0.96) 0%,
-      rgba(5, 18, 29, 0.80) 42%,
-      rgba(5, 18, 29, 0.36) 72%,
-      rgba(5, 18, 29, 0.12) 100%
+      rgba(31, 45, 103, 0.96) 0%,
+      rgba(31, 45, 103, 0.80) 42%,
+      rgba(31, 45, 103, 0.36) 72%,
+      rgba(31, 45, 103, 0.12) 100%
     ),
 
     linear-gradient(
       0deg,
-      rgba(5, 18, 29, 0.26),
-      rgba(5, 18, 29, 0.12)
+      rgba(31, 45, 103, 0.26),
+      rgba(31, 45, 103, 0.12)
     ),
 
     url("https://www.acamadi.co.uk/wp-content/uploads/939B4A75-14FE-4A94-9EE9-D53ADFF0CFE2-1024x947.jpeg");
@@ -365,8 +365,7 @@ h2 {
 
 .btn-primary {
   color: var(--navy);
-
-  background: var(--sand-light);
+  background: var(--sand);
 }
 
 
@@ -465,7 +464,7 @@ h2 {
 
 
 .text-link span {
-  color: #9a7746;
+  color: #9a7727;
 
   transition: transform 0.2s ease;
 }
@@ -556,7 +555,7 @@ h2 {
 
 
 .service-number {
-  color: #9a7746;
+  color: #9a7727;
 
   font-size: 12px;
 
@@ -608,7 +607,7 @@ h2 {
 .service-card a span {
   margin-left: 6px;
 
-  color: #9a7746;
+  color: #9a7727;
 }
 
 
@@ -733,7 +732,7 @@ h2 {
 .stars {
   margin-bottom: 20px;
 
-  color: #9a7746;
+  color: #9a7727;
 
   font-size: 15px;
 
@@ -744,7 +743,7 @@ h2 {
 .review-card p {
   min-height: 120px;
 
-  color: #394651;
+  color: #4b5570;
 
   font-size: 15px;
 
@@ -773,7 +772,7 @@ h2 {
 .areas {
   padding: 62px 0;
 
-  background: #9b7745;
+  background: #28397e;
 
   color: #fff;
 }
@@ -876,7 +875,7 @@ h2 {
 .site-footer {
   padding: 64px 0 26px;
 
-  background: #04101a;
+  background: #1b285f;
 
   color: #fff;
 }
@@ -994,7 +993,7 @@ h2 {
 
     gap: 8px;
 
-    background: rgba(7, 23, 36, 0.98);
+    background: rgba(31, 45, 103, 0.98);
 
     border-bottom:
       1px solid rgba(255, 255, 255, 0.08);
@@ -1096,8 +1095,8 @@ h2 {
 
       linear-gradient(
         90deg,
-        rgba(5, 18, 29, 0.93),
-        rgba(5, 18, 29, 0.64)
+        rgba(31, 45, 103, 0.93),
+        rgba(31, 45, 103, 0.64)
       ),
 
       url("https://www.acamadi.co.uk/wp-content/uploads/939B4A75-14FE-4A94-9EE9-D53ADFF0CFE2-1024x947.jpeg");
@@ -1273,10 +1272,10 @@ h2 {
 
     linear-gradient(
       90deg,
-      rgba(5, 18, 29, 0.97) 0%,
-      rgba(5, 18, 29, 0.88) 42%,
-      rgba(5, 18, 29, 0.50) 72%,
-      rgba(5, 18, 29, 0.20) 100%
+      rgba(31, 45, 103, 0.97) 0%,
+      rgba(31, 45, 103, 0.88) 42%,
+      rgba(31, 45, 103, 0.50) 72%,
+      rgba(31, 45, 103, 0.20) 100%
     ),
 
     url("https://www.acamadi.co.uk/wp-content/uploads/939B4A75-14FE-4A94-9EE9-D53ADFF0CFE2-1024x947.jpeg");
@@ -1417,7 +1416,7 @@ h2 {
 
   margin-bottom: 48px;
 
-  color: #a7804c;
+  color: #b18a32;
 
   font-size: 12px;
 
@@ -1430,7 +1429,7 @@ h2 {
 .detail-service-kicker {
   margin-bottom: 8px;
 
-  color: #a7804c;
+  color: #b18a32;
 
   font-size: 12px;
 
@@ -1487,7 +1486,7 @@ h2 {
 
   padding-left: 20px;
 
-  color: #46535e;
+  color: #5f6980;
 
   font-size: 13px;
 
@@ -1507,7 +1506,7 @@ h2 {
 
   left: 0;
 
-  color: #a7804c;
+  color: #b18a32;
 
   font-weight: 800;
 }
@@ -1619,8 +1618,8 @@ h2 {
 
     linear-gradient(
       180deg,
-      rgba(4, 16, 26, 0.05),
-      rgba(4, 16, 26, 0.45)
+      rgba(31, 45, 103, 0.06),
+      rgba(31, 45, 103, 0.45)
     ),
 
     url("https://www.acamadi.co.uk/wp-content/uploads/IMG_1178-1024x768.jpeg")
@@ -1639,7 +1638,7 @@ h2 {
 
   padding: 22px;
 
-  background: rgba(7, 23, 36, 0.92);
+  background: rgba(40, 57, 126, 0.94);
 
   backdrop-filter: blur(10px);
 
@@ -1754,7 +1753,7 @@ h2 {
 .service-final-cta {
   padding: 72px 0;
 
-  background: #9b7745;
+  background: #28397e;
 
   color: #fff;
 }
@@ -1999,7 +1998,7 @@ h2 {
 }
 
 .detail-service-card.featured li {
-  color: #46535e;
+  color: #5f6980;
 }
 
 
@@ -2111,7 +2110,7 @@ h2 {
   color: #fff;
   border-color: var(--navy);
   transform: translateY(-4px);
-  box-shadow: 0 18px 45px rgba(5, 20, 32, 0.14);
+  box-shadow: 0 18px 45px rgba(31, 45, 103, 0.18);
 }
 
 .detail-service-card:hover > p:not(.detail-service-kicker) {
@@ -2136,10 +2135,10 @@ h2 {
   background-image:
     linear-gradient(
       90deg,
-      rgba(5, 18, 29, 0.97) 0%,
-      rgba(5, 18, 29, 0.86) 42%,
-      rgba(5, 18, 29, 0.42) 72%,
-      rgba(5, 18, 29, 0.18) 100%
+      rgba(31, 45, 103, 0.97) 0%,
+      rgba(31, 45, 103, 0.86) 42%,
+      rgba(31, 45, 103, 0.42) 72%,
+      rgba(31, 45, 103, 0.18) 100%
     ),
     url("https://www.acamadi.co.uk/wp-content/uploads/IMG_5978-1-1024x922.jpeg");
 
@@ -2201,7 +2200,7 @@ h2 {
 
   margin-bottom: 34px;
 
-  color: #a7804c;
+  color: #b18a32;
 
   font-size: 12px;
 
@@ -2281,7 +2280,7 @@ h2 {
 
   transform: translateY(-4px);
 
-  box-shadow: 0 18px 45px rgba(5, 20, 32, 0.14);
+  box-shadow: 0 18px 45px rgba(31, 45, 103, 0.18);
 }
 
 
@@ -2299,7 +2298,7 @@ h2 {
 
 
 .package-number {
-  color: #a7804c;
+  color: #b18a32;
 
   font-size: 12px;
 
@@ -2401,7 +2400,7 @@ h2 {
 
   padding-left: 20px;
 
-  color: #46535e;
+  color: #5f6980;
 
   font-size: 13px;
 
@@ -2416,7 +2415,7 @@ h2 {
 
   left: 0;
 
-  color: #a7804c;
+  color: #b18a32;
 }
 
 
@@ -2451,7 +2450,7 @@ h2 {
 .package-cta span {
   margin-left: 7px;
 
-  color: #a7804c;
+  color: #b18a32;
 }
 
 
@@ -2536,8 +2535,8 @@ h2 {
   background:
     linear-gradient(
       180deg,
-      rgba(5, 18, 29, 0.02),
-      rgba(5, 18, 29, 0.15)
+      rgba(31, 45, 103, 0.02),
+      rgba(31, 45, 103, 0.15)
     ),
     url("https://www.acamadi.co.uk/wp-content/uploads/IMG_4761-1-1024x887.jpeg")
     center / cover;
@@ -2720,10 +2719,10 @@ h2 {
   background-image:
     linear-gradient(
       90deg,
-      rgba(5, 18, 29, 0.96) 0%,
-      rgba(5, 18, 29, 0.83) 48%,
-      rgba(5, 18, 29, 0.38) 75%,
-      rgba(5, 18, 29, 0.14) 100%
+      rgba(31, 45, 103, 0.96) 0%,
+      rgba(31, 45, 103, 0.83) 48%,
+      rgba(31, 45, 103, 0.38) 75%,
+      rgba(31, 45, 103, 0.14) 100%
     ),
     url("https://www.acamadi.co.uk/wp-content/uploads/939B4A75-14FE-4A94-9EE9-D53ADFF0CFE2-1024x947.jpeg") !important;
 
@@ -2817,7 +2816,7 @@ body .valet-card .valet-topline {
 
   margin: 0 0 27px !important;
 
-  color: #a7804c;
+  color: #b18a32;
 
   font-size: 11px;
   font-weight: 800;
@@ -2844,7 +2843,7 @@ body .valet-card .valet-type {
 body .valet-card .detail-service-kicker {
   margin: 0 0 7px !important;
 
-  color: #a7804c;
+  color: #b18a32;
 
   font-size: 11px;
   font-weight: 700;
@@ -2935,7 +2934,7 @@ body .valet-card li {
 
   padding-left: 18px;
 
-  color: #46535e;
+  color: #5f6980;
 
   font-size: 12px;
   line-height: 1.5;
@@ -2949,7 +2948,7 @@ body .valet-card li::before {
 
   left: 0;
 
-  color: #a7804c;
+  color: #b18a32;
 }
 
 
@@ -2972,7 +2971,7 @@ body .valet-card > a {
 body .valet-card > a span {
   margin-left: 6px;
 
-  color: #a7804c;
+  color: #b18a32;
 }
 
 
@@ -2987,7 +2986,7 @@ body .valet-grid .valet-card:hover {
   transform: translateY(-4px);
 
   box-shadow:
-    0 18px 45px rgba(5, 20, 32, 0.14);
+    0 18px 45px rgba(31, 45, 103, 0.18);
 }
 
 
@@ -3113,10 +3112,10 @@ body .valeting-refresh-grid > div:last-child p {
   background-image:
     linear-gradient(
       90deg,
-      rgba(5, 18, 29, 0.97) 0%,
-      rgba(5, 18, 29, 0.84) 46%,
-      rgba(5, 18, 29, 0.42) 74%,
-      rgba(5, 18, 29, 0.16) 100%
+      rgba(31, 45, 103, 0.97) 0%,
+      rgba(31, 45, 103, 0.84) 46%,
+      rgba(31, 45, 103, 0.42) 74%,
+      rgba(31, 45, 103, 0.16) 100%
     ),
     url("https://www.acamadi.co.uk/wp-content/uploads/939B4A75-14FE-4A94-9EE9-D53ADFF0CFE2-1024x947.jpeg") !important;
 
@@ -3194,7 +3193,7 @@ body .dashcam-price-card:hover {
   transform: translateY(-4px);
 
   box-shadow:
-    0 18px 45px rgba(5, 20, 32, 0.14);
+    0 18px 45px rgba(31, 45, 103, 0.18);
 }
 
 
@@ -3212,7 +3211,7 @@ body .dashcam-card-top {
 
 
 body .dashcam-number {
-  color: #a7804c;
+  color: #b18a32;
 
   font-size: 11px;
 
@@ -3314,7 +3313,7 @@ body .dashcam-price-card li {
 
   padding-left: 18px;
 
-  color: #46535e;
+  color: #5f6980;
 
   font-size: 12px;
 
@@ -3329,7 +3328,7 @@ body .dashcam-price-card li::before {
 
   left: 0;
 
-  color: #a7804c;
+  color: #b18a32;
 }
 
 
@@ -3349,7 +3348,7 @@ body .dashcam-price-card > a {
 body .dashcam-price-card > a span {
   margin-left: 6px;
 
-  color: #a7804c;
+  color: #b18a32;
 }
 
 
@@ -3436,8 +3435,8 @@ body .dashcam-hardwire-visual {
   background:
     linear-gradient(
       180deg,
-      rgba(5, 18, 29, 0.03),
-      rgba(5, 18, 29, 0.48)
+      rgba(31, 45, 103, 0.03),
+      rgba(31, 45, 103, 0.48)
     ),
     url("https://www.acamadi.co.uk/wp-content/uploads/IMG_1178-1024x768.jpeg")
     center / cover;
@@ -3457,7 +3456,7 @@ body .dashcam-visual-label {
 
   min-width: 205px;
 
-  background: rgba(7, 23, 36, 0.92);
+  background: rgba(40, 57, 126, 0.94);
 
   backdrop-filter: blur(10px);
 }
@@ -3575,7 +3574,7 @@ body .dashcam-choice-grid article > span {
 
   margin-bottom: 35px;
 
-  color: #a7804c;
+  color: #b18a32;
 
   font-size: 11px;
 
@@ -3727,10 +3726,10 @@ body .dashcam-time-grid > div:last-child p {
   background-image:
     linear-gradient(
       90deg,
-      rgba(5, 18, 29, 0.97) 0%,
-      rgba(5, 18, 29, 0.84) 46%,
-      rgba(5, 18, 29, 0.42) 74%,
-      rgba(5, 18, 29, 0.16) 100%
+      rgba(31, 45, 103, 0.97) 0%,
+      rgba(31, 45, 103, 0.84) 46%,
+      rgba(31, 45, 103, 0.42) 74%,
+      rgba(31, 45, 103, 0.16) 100%
     ),
     url("https://www.acamadi.co.uk/wp-content/uploads/939B4A75-14FE-4A94-9EE9-D53ADFF0CFE2-1024x947.jpeg") !important;
 
@@ -3808,7 +3807,7 @@ body .reverse-card:hover {
   transform: translateY(-4px);
 
   box-shadow:
-    0 18px 45px rgba(5, 20, 32, 0.14);
+    0 18px 45px rgba(31, 45, 103, 0.18);
 }
 
 
@@ -3826,7 +3825,7 @@ body .reverse-topline {
 
 
 body .reverse-number {
-  color: #a7804c;
+  color: #b18a32;
 
   font-size: 11px;
 
@@ -3926,7 +3925,7 @@ body .reverse-card li {
 
   padding-left: 18px;
 
-  color: #46535e;
+  color: #5f6980;
 
   font-size: 12px;
 
@@ -3941,7 +3940,7 @@ body .reverse-card li::before {
 
   left: 0;
 
-  color: #a7804c;
+  color: #b18a32;
 }
 
 
@@ -3961,7 +3960,7 @@ body .reverse-card > a {
 body .reverse-card > a span {
   margin-left: 6px;
 
-  color: #a7804c;
+  color: #b18a32;
 }
 
 
@@ -4050,8 +4049,8 @@ body .reverse-display-visual {
   background:
     linear-gradient(
       180deg,
-      rgba(5, 18, 29, 0.03),
-      rgba(5, 18, 29, 0.48)
+      rgba(31, 45, 103, 0.03),
+      rgba(31, 45, 103, 0.48)
     ),
     url("https://www.acamadi.co.uk/wp-content/uploads/IMG_1178-1024x768.jpeg")
     center / cover;
@@ -4069,7 +4068,7 @@ body .reverse-display-label {
 
   padding: 20px;
 
-  background: rgba(7, 23, 36, 0.92);
+  background: rgba(40, 57, 126, 0.94);
 
   backdrop-filter: blur(10px);
 }
@@ -4193,7 +4192,7 @@ body .reverse-benefit-grid article > span {
 
   margin-bottom: 30px;
 
-  color: #a7804c;
+  color: #b18a32;
 
   font-size: 11px;
 
@@ -4362,10 +4361,10 @@ body .reverse-time-grid > div:last-child p {
   background-image:
     linear-gradient(
       90deg,
-      rgba(5, 18, 29, 0.97) 0%,
-      rgba(5, 18, 29, 0.84) 46%,
-      rgba(5, 18, 29, 0.42) 74%,
-      rgba(5, 18, 29, 0.16) 100%
+      rgba(31, 45, 103, 0.97) 0%,
+      rgba(31, 45, 103, 0.84) 46%,
+      rgba(31, 45, 103, 0.42) 74%,
+      rgba(31, 45, 103, 0.16) 100%
     ),
     url("https://www.acamadi.co.uk/wp-content/uploads/939B4A75-14FE-4A94-9EE9-D53ADFF0CFE2-1024x947.jpeg") !important;
 
@@ -4430,7 +4429,7 @@ body .technology-card:hover {
   transform: translateY(-4px);
 
   box-shadow:
-    0 18px 45px rgba(5, 20, 32, 0.14);
+    0 18px 45px rgba(31, 45, 103, 0.18);
 }
 
 
@@ -4441,7 +4440,7 @@ body .technology-topline {
 
   margin-bottom: 27px;
 
-  color: #a7804c;
+  color: #b18a32;
 
   font-size: 11px;
   font-weight: 800;
@@ -4534,7 +4533,7 @@ body .technology-card > a {
 
 body .technology-card > a span {
   margin-left: 6px;
-  color: #a7804c;
+  color: #b18a32;
 }
 
 
@@ -4772,7 +4771,7 @@ body .technology-info-grid p {
   place-items: center;
   background:
     radial-gradient(circle at 75% 20%, rgba(232,215,188,.18), transparent 28%),
-    linear-gradient(135deg, #071724, #102d43);
+    linear-gradient(135deg, #28397e, #102d43);
 }
 
 .blog-card-placeholder span {
@@ -4795,7 +4794,7 @@ body .technology-info-grid p {
   justify-content: space-between;
   gap: 16px;
   margin-bottom: 17px;
-  color: #9a7746;
+  color: #9a7727;
   font-size: 10px;
   font-weight: 800;
   letter-spacing: .09em;
@@ -4834,7 +4833,7 @@ body .technology-info-grid p {
 
 .blog-card-footer a span {
   margin-left: 5px;
-  color: #9a7746;
+  color: #9a7727;
 }
 
 /* ARTICLE */
@@ -4897,7 +4896,7 @@ body .technology-info-grid p {
 .blog-post-content {
   font-size: 16px;
   line-height: 1.85;
-  color: #394651;
+  color: #4b5570;
 }
 
 .blog-post-content h2 {
@@ -4940,7 +4939,7 @@ body .technology-info-grid p {
 .blog-aside-kicker {
   display: block;
   margin-bottom: 18px;
-  color: #9a7746;
+  color: #9a7727;
   font-size: 10px;
   font-weight: 800;
   letter-spacing: .12em;
@@ -4961,7 +4960,7 @@ body .technology-info-grid p {
 
 .blog-post-cta {
   padding: 58px 0;
-  background: #9b7745;
+  background: #28397e;
   color: #fff;
 }
 
@@ -5089,9 +5088,9 @@ body .technology-info-grid p {
 /* HOMEPAGE SERVICE CARD HOVER - FINAL */
 
 .services .service-card:hover {
-  background: #071724 !important;
+  background: #28397e !important;
   color: #ffffff !important;
-  border-color: #071724 !important;
+  border-color: #28397e !important;
 }
 
 .services .service-card:hover h3,
@@ -5269,7 +5268,7 @@ body .technology-info-grid p {
 }
 
 .camera-brand {
-  color: #9a7746;
+  color: #9a7727;
   font-size: 10px;
   font-weight: 800;
   letter-spacing: .12em;
@@ -5321,7 +5320,7 @@ body .technology-info-grid p {
 
 .camera-card > a span {
   margin-left: 5px;
-  color: #9a7746;
+  color: #9a7727;
 }
 
 .camera-card:hover .camera-type,
@@ -5480,7 +5479,7 @@ body .technology-info-grid p {
 
 
 /* CONTACT PAGE */
-.contact-hero{padding:92px 0 70px;background:var(--navy);color:#fff}.contact-hero-inner{max-width:820px}.contact-hero h1{max-width:780px;margin:0 0 20px;color:#fff;font-size:clamp(42px,6vw,72px);line-height:1.02}.contact-hero h1 span{color:var(--sand-light)}.contact-hero-copy{max-width:650px;margin:0;color:rgba(255,255,255,.7);font-size:17px;line-height:1.75}.contact-section{background:#f7f5f0}.contact-grid{display:grid;grid-template-columns:minmax(0,.72fr) minmax(0,1.28fr);gap:70px;align-items:start}.contact-intro h2{margin:0 0 18px;font-size:clamp(30px,4vw,46px)}.contact-intro>p{max-width:480px;color:var(--muted);line-height:1.75}.contact-methods{display:grid;gap:12px;margin-top:32px}.contact-method{display:block;padding:20px 22px;border:1px solid var(--line);border-radius:var(--radius);background:#fff}.contact-method span{display:block;margin-bottom:5px;color:#9a7746;font-size:10px;font-weight:800;letter-spacing:.12em;text-transform:uppercase}.contact-method strong{font-family:"Montserrat",sans-serif;font-size:17px}.enquiry-form-wrap{padding:34px;border:1px solid var(--line);border-radius:var(--radius);background:#fff;box-shadow:0 18px 45px rgba(7,23,36,.07)}.enquiry-form-head{margin-bottom:26px}.enquiry-form-head h2{margin:0 0 8px;font-size:28px}.enquiry-form-head p{margin:0;color:var(--muted);font-size:13px}.enquiry-form{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}.form-field{display:grid;gap:8px}.form-field-full{grid-column:1/-1}.form-field label{color:var(--ink);font-size:12px;font-weight:700}.form-field input,.form-field select,.form-field textarea{width:100%;min-height:50px;padding:13px 14px;border:1px solid #d9d6cf;border-radius:7px;background:#fff;color:var(--ink);font:inherit;font-size:14px;outline:none}.form-field textarea{min-height:150px;resize:vertical}.form-field input:focus,.form-field select:focus,.form-field textarea:focus{border-color:#9a7746;box-shadow:0 0 0 3px rgba(154,119,70,.10)}.enquiry-submit{grid-column:1/-1;display:flex;gap:18px;align-items:center;margin-top:4px}.enquiry-submit .btn{border:0;cursor:pointer}.form-note{margin:0;color:var(--muted);font-size:10px;line-height:1.55}.contact-service-note{padding:38px 0;background:var(--navy);color:#fff}.contact-service-note-inner{display:flex;gap:30px;justify-content:space-between;align-items:center}.contact-service-note p{max-width:720px;margin:0;color:rgba(255,255,255,.68);line-height:1.7}@media(max-width:860px){.contact-grid{grid-template-columns:1fr;gap:42px}.contact-service-note-inner{align-items:flex-start;flex-direction:column}}@media(max-width:620px){.contact-hero{padding:68px 0 52px}.enquiry-form-wrap{padding:24px 18px}.enquiry-form{grid-template-columns:1fr}.form-field-full,.enquiry-submit{grid-column:auto}.enquiry-submit{align-items:stretch;flex-direction:column}}
+.contact-hero{padding:92px 0 70px;background:var(--navy);color:#fff}.contact-hero-inner{max-width:820px}.contact-hero h1{max-width:780px;margin:0 0 20px;color:#fff;font-size:clamp(42px,6vw,72px);line-height:1.02}.contact-hero h1 span{color:var(--sand-light)}.contact-hero-copy{max-width:650px;margin:0;color:rgba(255,255,255,.7);font-size:17px;line-height:1.75}.contact-section{background:#f7f5f0}.contact-grid{display:grid;grid-template-columns:minmax(0,.72fr) minmax(0,1.28fr);gap:70px;align-items:start}.contact-intro h2{margin:0 0 18px;font-size:clamp(30px,4vw,46px)}.contact-intro>p{max-width:480px;color:var(--muted);line-height:1.75}.contact-methods{display:grid;gap:12px;margin-top:32px}.contact-method{display:block;padding:20px 22px;border:1px solid var(--line);border-radius:var(--radius);background:#fff}.contact-method span{display:block;margin-bottom:5px;color:#9a7727;font-size:10px;font-weight:800;letter-spacing:.12em;text-transform:uppercase}.contact-method strong{font-family:"Montserrat",sans-serif;font-size:17px}.enquiry-form-wrap{padding:34px;border:1px solid var(--line);border-radius:var(--radius);background:#fff;box-shadow:0 18px 45px rgba(40,57,126,.08)}.enquiry-form-head{margin-bottom:26px}.enquiry-form-head h2{margin:0 0 8px;font-size:28px}.enquiry-form-head p{margin:0;color:var(--muted);font-size:13px}.enquiry-form{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}.form-field{display:grid;gap:8px}.form-field-full{grid-column:1/-1}.form-field label{color:var(--ink);font-size:12px;font-weight:700}.form-field input,.form-field select,.form-field textarea{width:100%;min-height:50px;padding:13px 14px;border:1px solid #d9d6cf;border-radius:7px;background:#fff;color:var(--ink);font:inherit;font-size:14px;outline:none}.form-field textarea{min-height:150px;resize:vertical}.form-field input:focus,.form-field select:focus,.form-field textarea:focus{border-color:#9a7727;box-shadow:0 0 0 3px rgba(238,204,108,.20)}.enquiry-submit{grid-column:1/-1;display:flex;gap:18px;align-items:center;margin-top:4px}.enquiry-submit .btn{border:0;cursor:pointer}.form-note{margin:0;color:var(--muted);font-size:10px;line-height:1.55}.contact-service-note{padding:38px 0;background:var(--navy);color:#fff}.contact-service-note-inner{display:flex;gap:30px;justify-content:space-between;align-items:center}.contact-service-note p{max-width:720px;margin:0;color:rgba(255,255,255,.68);line-height:1.7}@media(max-width:860px){.contact-grid{grid-template-columns:1fr;gap:42px}.contact-service-note-inner{align-items:flex-start;flex-direction:column}}@media(max-width:620px){.contact-hero{padding:68px 0 52px}.enquiry-form-wrap{padding:24px 18px}.enquiry-form{grid-template-columns:1fr}.form-field-full,.enquiry-submit{grid-column:auto}.enquiry-submit{align-items:stretch;flex-direction:column}}
 
 
 /* CONTACT FORM SUCCESS */
