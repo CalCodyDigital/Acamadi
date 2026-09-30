@@ -69,12 +69,55 @@ if (postcodeForm && postcodeResult) {
   const postcodeInput = postcodeForm.querySelector('[name="postcode"]');
   const submitButton = postcodeForm.querySelector('button[type="submit"]');
 
+  const standardOutcodes = new Set([
+    // Hertfordshire / nearby listed towns
+    'EN10','EN11','EN7','EN8','EN9','EN6','EN4','EN5',
+    'SG1','SG2','SG9','SG12','SG13','SG14',
+    'CM21','CM23','CM24',
+    'AL1','AL2','AL3','AL4','AL9','AL10',
+    'WD6','WD17','WD18','WD19','WD24','WD25',
+
+    // Essex listed towns
+    'CM5','CM6','CM13','CM14','CM15','CM16','CM17','CM18','CM19','CM20',
+    'CB10','CB11',
+    'IG7','IG9','IG10',
+
+    // North London listed areas
+    'EN1','EN2','EN3',
+    'N2','N3','N8','N10','N11','N12','N13','N14','N15','N17','N20','N21','N22',
+
+    // East London listed areas
+    'E4','E11','E18',
+    'IG4','IG8'
+  ]);
+
+  const listedAreaNames = [
+    'hoddesdon','ware','broxbourne','nazeing','cheshunt','hertford','hertford heath',
+    'waterford','stapleford','stanstead abbotts','stanstead abbots','stansted',
+    'bishops stortford','bishop s stortford','waltham cross','waltham abbey',
+    'watton at stone','stevenage','buntingford','sawbridgeworth','st albans',
+    'saint albans','hatfield','watford',
+    'harlow','saffron walden','ongar','epping','dunmow','great dunmow','brentwood',
+    'loughton','chigwell','buckhurst hill','theydon','theydon bois',
+    'enfield','wood green','tottenham','potters bar','barnet','finchley','muswell hill',
+    'crouch end','winchmore hill','bush hill park','borehamwood',
+    'wanstead','redbridge','chingford','south woodford'
+  ];
+
   const formatPostcode = value => {
     const clean = value.toUpperCase().replace(/\s+/g, '');
     return clean.length > 3
       ? clean.slice(0, -3) + ' ' + clean.slice(-3)
       : clean;
   };
+
+  const normalise = value =>
+    (value || '')
+      .toLowerCase()
+      .replace(/[’']/g, '')
+      .replace(/[^a-z0-9]+/g, ' ')
+      .replace(/\s+/g, ' ')
+      .trim();
 
   const showPostcodeResult = (status, title, message, postcode) => {
     const encoded = encodeURIComponent(postcode || '');
@@ -122,30 +165,36 @@ if (postcodeForm && postcodeResult) {
 
       const data = await response.json();
       const result = data.result || {};
-      const county = result.admin_county || '';
-      const district = result.admin_district || '';
-      const region = result.region || '';
       const canonicalPostcode = result.postcode || postcode;
+      const outcode = (result.outcode || canonicalPostcode.split(' ')[0] || '').toUpperCase();
 
-      const covered =
-        region === 'London' ||
-        county === 'Hertfordshire' ||
-        county === 'Essex' ||
-        district === 'Thurrock' ||
-        district === 'Southend-on-Sea';
+      const locationText = normalise([
+        result.parish,
+        result.admin_ward,
+        result.admin_district,
+        result.admin_county,
+        result.region,
+        result.pfa
+      ].filter(Boolean).join(' '));
+
+      const matchesListedName = listedAreaNames.some(name =>
+        locationText.includes(normalise(name))
+      );
+
+      const covered = matchesListedName || standardOutcodes.has(outcode);
 
       if (covered) {
         showPostcodeResult(
           'covered',
-          "You're in our usual service area.",
-          'We can normally provide mobile services at your location. Final availability depends on the service and appointment date.',
+          "You're in our standard service area.",
+          'This postcode falls within one of the areas ACAMADI normally covers. Final availability depends on the service and appointment date.',
           canonicalPostcode
         );
       } else {
         showPostcodeResult(
           'outside',
-          'Your postcode is outside our usual area.',
-          'We may still be able to help depending on the service and location. Send us the details and we can confirm.',
+          'This postcode is outside our standard area.',
+          'ACAMADI may still be able to help depending on the service and location. Send us the details and we can confirm.',
           canonicalPostcode
         );
       }
