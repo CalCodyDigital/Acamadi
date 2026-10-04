@@ -270,7 +270,7 @@ h2 {
       rgba(31, 45, 103, 0.12)
     ),
 
-    url("https://www.acamadi.co.uk/wp-content/uploads/939B4A75-14FE-4A94-9EE9-D53ADFF0CFE2-1024x947.jpeg");
+    url("images/acamadi-jaguar.webp");
 
 
   background-size: cover;
@@ -644,7 +644,7 @@ h2 {
       rgba(0, 0, 0, 0.18)
     ),
 
-    url("https://www.acamadi.co.uk/wp-content/uploads/IMG_1178-1024x768.jpeg")
+    url("images/acamadi-porsche-wash.webp")
     center / cover;
 
 
@@ -1099,7 +1099,7 @@ h2 {
         rgba(31, 45, 103, 0.64)
       ),
 
-      url("https://www.acamadi.co.uk/wp-content/uploads/939B4A75-14FE-4A94-9EE9-D53ADFF0CFE2-1024x947.jpeg");
+      url("images/acamadi-jaguar.webp");
 
 
     background-position: 60% center;
@@ -1278,7 +1278,7 @@ h2 {
       rgba(31, 45, 103, 0.20) 100%
     ),
 
-    url("https://www.acamadi.co.uk/wp-content/uploads/939B4A75-14FE-4A94-9EE9-D53ADFF0CFE2-1024x947.jpeg");
+    url("images/acamadi-porsche.webp");
 }
 
 
@@ -1622,7 +1622,7 @@ h2 {
       rgba(31, 45, 103, 0.45)
     ),
 
-    url("https://www.acamadi.co.uk/wp-content/uploads/IMG_1178-1024x768.jpeg")
+    url("images/acamadi-range-rover.webp")
     center / cover;
 }
 
@@ -2140,7 +2140,7 @@ h2 {
       rgba(31, 45, 103, 0.42) 72%,
       rgba(31, 45, 103, 0.18) 100%
     ),
-    url("https://www.acamadi.co.uk/wp-content/uploads/IMG_5978-1-1024x922.jpeg");
+    url("images/acamadi-porsche.webp");
 
   background-position: center 58%;
 }
@@ -2538,7 +2538,7 @@ h2 {
       rgba(31, 45, 103, 0.02),
       rgba(31, 45, 103, 0.15)
     ),
-    url("https://www.acamadi.co.uk/wp-content/uploads/IMG_4761-1-1024x887.jpeg")
+    url("images/acamadi-range-rover.webp")
     center / cover;
 }
 
@@ -2724,7 +2724,7 @@ h2 {
       rgba(31, 45, 103, 0.38) 75%,
       rgba(31, 45, 103, 0.14) 100%
     ),
-    url("https://www.acamadi.co.uk/wp-content/uploads/939B4A75-14FE-4A94-9EE9-D53ADFF0CFE2-1024x947.jpeg") !important;
+    url("images/acamadi-discovery.webp") !important;
 
   background-size: cover !important;
   background-position: center 42% !important;
@@ -3117,7 +3117,7 @@ body .valeting-refresh-grid > div:last-child p {
       rgba(31, 45, 103, 0.42) 74%,
       rgba(31, 45, 103, 0.16) 100%
     ),
-    url("https://www.acamadi.co.uk/wp-content/uploads/939B4A75-14FE-4A94-9EE9-D53ADFF0CFE2-1024x947.jpeg") !important;
+    url("images/acamadi-jaguar.webp") !important;
 
   background-size: cover !important;
   background-position: center 43% !important;
@@ -3438,7 +3438,7 @@ body .dashcam-hardwire-visual {
       rgba(31, 45, 103, 0.03),
       rgba(31, 45, 103, 0.48)
     ),
-    url("https://www.acamadi.co.uk/wp-content/uploads/IMG_1178-1024x768.jpeg")
+    url("images/acamadi-porsche-wash.webp")
     center / cover;
 
   overflow: hidden;
@@ -3731,7 +3731,7 @@ body .dashcam-time-grid > div:last-child p {
       rgba(31, 45, 103, 0.42) 74%,
       rgba(31, 45, 103, 0.16) 100%
     ),
-    url("https://www.acamadi.co.uk/wp-content/uploads/939B4A75-14FE-4A94-9EE9-D53ADFF0CFE2-1024x947.jpeg") !important;
+    url("images/acamadi-range-rover.webp") !important;
 
   background-size: cover !important;
   background-position: center 43% !important;
@@ -4052,7 +4052,7 @@ body .reverse-display-visual {
       rgba(31, 45, 103, 0.03),
       rgba(31, 45, 103, 0.48)
     ),
-    url("https://www.acamadi.co.uk/wp-content/uploads/IMG_1178-1024x768.jpeg")
+    url("images/acamadi-discovery.webp")
     center / cover;
 }
 
@@ -4366,7 +4366,7 @@ body .reverse-time-grid > div:last-child p {
       rgba(31, 45, 103, 0.42) 74%,
       rgba(31, 45, 103, 0.16) 100%
     ),
-    url("https://www.acamadi.co.uk/wp-content/uploads/939B4A75-14FE-4A94-9EE9-D53ADFF0CFE2-1024x947.jpeg") !important;
+    url("images/acamadi-jaguar.webp") !important;
 
   background-size: cover !important;
   background-position: center 43% !important;
@@ -5758,3 +5758,7 @@ body .technology-info-grid p {
 .legal-contact p a{color:var(--navy);text-decoration:underline}
 @media(max-width:1000px){.footer-grid{grid-template-columns:repeat(2,minmax(0,1fr));row-gap:36px}.legal-layout{grid-template-columns:220px minmax(0,1fr);gap:28px}.legal-document{padding:32px}}
 @media(max-width:700px){.footer-grid{grid-template-columns:1fr;gap:24px}.legal-hero{padding:140px 0 52px}.legal-layout{grid-template-columns:1fr;gap:24px}.legal-sidebar{position:static}.legal-document{padding:27px 22px}.legal-clause{padding-bottom:20px;margin-bottom:22px}}
+
+/* Restored local imagery: keep the vehicle visible beside hero copy. */
+.hero-bg{background-position:center 47%}
+@media(max-width:720px){.hero-bg{background-position:64% center}}
