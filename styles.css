@@ -5786,3 +5786,9 @@ body .technology-info-grid p {
 .google-rating .google-g-logo{margin-right:2px}
 .review-card footer span{display:inline-flex;gap:5px;align-items:center;vertical-align:middle}
 .google-g-logo-small{width:16px;height:16px}
+
+
+/* FOOTER COMPANY CONTACT */
+.footer-company .footer-phone{display:block;width:fit-content;margin-top:16px;color:var(--sand-light);font-size:15px;font-weight:700;line-height:1.6}
+.footer-company .footer-phone:hover{text-decoration:underline;text-underline-offset:4px}
+.footer-company .footer-location{display:block;margin-top:10px;color:rgba(255,255,255,.65);font-size:12px;line-height:1.65}
