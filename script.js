@@ -211,3 +211,75 @@ if (postcodeForm && postcodeResult) {
     }
   });
 }
+
+
+// Verified Google review selection (from client-supplied review screenshots).
+// A random set of three is displayed on each page load. Update this list manually as needed.
+(() => {
+  const googleReviews = [
+  {
+    "name": "Suzannah Weinfass",
+    "stars": 5,
+    "body": "ACAMADI did a superb job valeting my car. Took a lot of time with great attention to detail, leaving my car looking like new. Would have no hesitation to recommend!"
+  },
+  {
+    "name": "Joanne Kellam",
+    "stars": 5,
+    "body": "I cannot recommend this company highly enough ! Austin is very professional throughout - our car has never looked so good, the attention to detail and hard work is truly shown in the end product ! 10/10 service !"
+  },
+  {
+    "name": "Martin C",
+    "stars": 5,
+    "body": "Having a bought my car second hand I have never been completely happy with the paint work quality. After a recommendation from a friend Acamadi stepped in to provide a Paint Enhancement service to remove the small swirls in the paint work. The results are excellent and above what I expected. A very friendly and professional service which I will definitely use again when my cars need valeting. Recommended!"
+  },
+  {
+    "name": "Francesca",
+    "stars": 5,
+    "body": "Austin arrived on time and quickly fitted my front and rear dashcam. Even taking the time to explain how it works and how to use the app. The wiring is undetectable. Top class."
+  },
+  {
+    "name": "Danny Pope",
+    "stars": 5,
+    "body": "Brilliant service, such a nice and polite guy aswell"
+  },
+  {
+    "name": "G P",
+    "stars": 5,
+    "body": "I cannot recommend Austion enough. His work is flawless. Like many, I hadn’t cleaned my car for months. It was embarrassing. However, once Austin had performed his magic, both inside and out, it looked like it had just come off the production line. What’s more, he’s an absolutely lovely chap. Punctual, polite, respectful, helpful and hardworking. I shan’t hesitate to use his services, again, and have no hesitation in highly recommending him."
+  },
+  {
+    "name": "Valentina Mihova",
+    "stars": 5,
+    "body": "Excellent service!"
+  }
+];
+  const grids = document.querySelectorAll('[data-google-review-grid]');
+  if (!grids.length) return;
+  const eligible = googleReviews.filter(review => review.stars >= 4);
+  const chosen = [...eligible];
+  for (let i = chosen.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [chosen[i], chosen[j]] = [chosen[j], chosen[i]];
+  }
+  grids.forEach(grid => {
+    const count = Math.min(Number(grid.dataset.googleReviewCount) || 3, chosen.length);
+    const cards = chosen.slice(0, count).map(review => {
+      const card = document.createElement('blockquote');
+      card.className = 'review-card';
+      const stars = document.createElement('div');
+      stars.className = 'stars';
+      stars.setAttribute('aria-label', review.stars + ' out of 5 stars');
+      stars.textContent = '★'.repeat(review.stars);
+      const quote = document.createElement('p');
+      quote.textContent = '“' + review.body + '”';
+      const footer = document.createElement('footer');
+      footer.textContent = review.name;
+      const source = document.createElement('span');
+      source.textContent = 'Google review';
+      footer.appendChild(source);
+      card.append(stars, quote, footer);
+      return card;
+    });
+    grid.replaceChildren(...cards);
+  });
+})();
