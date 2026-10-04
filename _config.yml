@@ -1,7 +1,7 @@
 title: ACAMADI Automotive
 description: Mobile detailing, valeting and vehicle technology across Hertfordshire, London and Essex.
-url: "https://whz67wh7pt-lgtm.github.io"
-baseurl: "/Acamadi"
+url: "https://www.acamadi.co.uk"
+baseurl: ""
 permalink: /blog/:title/
 markdown: kramdown
 
