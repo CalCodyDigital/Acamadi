@@ -275,7 +275,14 @@ if (postcodeForm && postcodeResult) {
       const footer = document.createElement('footer');
       footer.textContent = review.name;
       const source = document.createElement('span');
-      source.textContent = 'Google review';
+      const googleIcon = document.createElement('img');
+      googleIcon.src = 'https://www.gstatic.com/images/branding/product/1x/googleg_48dp.png';
+      googleIcon.className = 'google-g-logo google-g-logo-small';
+      googleIcon.alt = '';
+      googleIcon.width = 16;
+      googleIcon.height = 16;
+      googleIcon.loading = 'lazy';
+      source.append(googleIcon, document.createTextNode('Google review'));
       footer.appendChild(source);
       card.append(stars, quote, footer);
       return card;
