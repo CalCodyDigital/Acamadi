@@ -5112,7 +5112,7 @@ body .technology-info-grid p {
    ========================================================= */
 
 .camera-catalog-hero .service-page-hero-content {
-  max-width: 900px;
+  max-width: none;
 }
 
 .camera-info-strip {
