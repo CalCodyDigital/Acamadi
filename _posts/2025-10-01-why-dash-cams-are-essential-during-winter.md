@@ -5,7 +5,7 @@ date: 2025-10-01
 category: Dash Cams
 read_time: 5 min read
 excerpt: Shorter days, poor visibility and difficult road conditions make winter one of the strongest reasons to consider a properly installed dash cam.
-image: ""
+image: "/images/blackvue-dr970x-2ch.webp"
 image_alt: Dash cam fitted inside a vehicle
 seo_title: Why Dash Cams Matter in Winter | ACAMADI Automotive
 seo_description: Why a dash cam can be especially useful during winter driving, from low-light journeys and poor road conditions to parking incidents.

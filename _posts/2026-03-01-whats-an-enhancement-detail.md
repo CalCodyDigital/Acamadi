@@ -5,7 +5,7 @@ date: 2026-03-01
 category: Detailing
 read_time: 7 min read
 excerpt: An enhancement detail sits between a regular valet and heavier paint correction, focusing on gloss, clarity and light paint defects.
-image: ""
+image: "/images/acamadi-porsche.webp"
 image_alt: Vehicle paintwork after enhancement detailing
 seo_title: What Is an Enhancement Detail? | ACAMADI Automotive
 seo_description: An enhancement detail improves gloss and clarity while reducing light swirl marks without moving into a heavier multi-stage correction.

@@ -5,7 +5,7 @@ date: 2026-01-01
 category: Valeting
 read_time: 5 min read
 excerpt: Returning a lease vehicle is easier when dirt, stains and neglected areas are dealt with before the final inspection.
-image: ""
+image: "/images/acamadi-discovery.webp"
 image_alt: Vehicle prepared for end of lease return
 seo_title: End of Lease Valeting Guide | ACAMADI Automotive
 seo_description: Preparing a lease vehicle for return with a professional valet can improve presentation and reveal the true condition before inspection.

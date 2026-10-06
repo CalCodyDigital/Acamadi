@@ -5,7 +5,7 @@ date: 2026-02-01
 category: Ceramic Coatings
 read_time: 7 min read
 excerpt: A new vehicle may leave the showroom looking perfect, but protection is about making that finish easier to preserve once everyday use begins.
-image: ""
+image: "/images/acamadi-jaguar.webp"
 image_alt: New vehicle with protected paintwork
 seo_title: Is New Car Protection Worth It? | ACAMADI Automotive
 seo_description: What new car protection is designed to do, including paint, glass, wheels and interior surfaces, and when it may be worth considering.
