@@ -5798,3 +5798,12 @@ body .technology-info-grid p {
 .footer-socials a{display:inline-flex;align-items:center;justify-content:center;width:40px;height:40px;border:1px solid rgba(255,255,255,.25);border-radius:50%;color:#fff;transition:color .2s,border-color .2s,background-color .2s,transform .2s}
 .footer-socials a:hover,.footer-socials a:focus-visible{color:#1f2d67;background:#f1d47f;border-color:#f1d47f;transform:translateY(-2px)}
 .footer-socials svg{display:block;width:19px;height:19px;flex-shrink:0}
+
+
+/* HOMEPAGE ANCHOR OFFSETS */
+#services,
+#about,
+#reviews,
+#areas {
+  scroll-margin-top: 105px;
+}
