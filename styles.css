@@ -4683,7 +4683,7 @@ body .technology-info-grid p {
 }
 
 .blog-hero-inner {
-  max-width: 850px;
+  max-width: none;
 }
 
 .blog-hero h1,
