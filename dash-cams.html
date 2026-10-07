@@ -9,7 +9,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Montserrat:wght@500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css?v=21">
+  <link rel="stylesheet" href="styles.css?v=29">
 </head>
 
 <body>
@@ -102,13 +102,6 @@
 
 
         <div class="camera-brand-tools">
-          <div class="camera-brand-filter" role="group" aria-label="Filter dash cams by brand">
-            <span class="camera-filter-label">Filter by brand</span>
-            <button type="button" class="camera-brand-button active" data-camera-brand-filter="all" aria-pressed="true">All brands</button>
-            <button type="button" class="camera-brand-button" data-camera-brand-filter="blackvue" aria-pressed="false">BlackVue</button>
-            <button type="button" class="camera-brand-button" data-camera-brand-filter="thinkware" aria-pressed="false">Thinkware</button>
-            <button type="button" class="camera-brand-button" data-camera-brand-filter="finevu" aria-pressed="false">FineVu</button>
-          </div>
           <div class="camera-brand-overview" aria-label="Dash cam brand overview">
             <span class="camera-brand-overview-label">Brand guide</span>
             <div class="camera-brand-overview-items">
@@ -119,6 +112,7 @@
           </div>
         </div>
 
+        <div class="camera-filter-row">
         <div class="camera-tabs" role="tablist" aria-label="Dash cam type">
           <button class="camera-tab active" type="button" role="tab" aria-selected="true" aria-controls="dual-cameras" data-camera-tab="dual-cameras">
             Front + Rear
@@ -128,6 +122,14 @@
             Front Only
             <span>11 options</span>
           </button>
+        </div>
+          <div class="camera-brand-filter" role="group" aria-label="Filter dash cams by brand">
+            <span class="camera-filter-label">Filter by brand</span>
+            <button type="button" class="camera-brand-button active" data-camera-brand-filter="all" aria-pressed="true">All brands</button>
+            <button type="button" class="camera-brand-button" data-camera-brand-filter="blackvue" aria-pressed="false">BlackVue</button>
+            <button type="button" class="camera-brand-button" data-camera-brand-filter="thinkware" aria-pressed="false">Thinkware</button>
+            <button type="button" class="camera-brand-button" data-camera-brand-filter="finevu" aria-pressed="false">FineVu</button>
+          </div>
         </div>
 
         <div class="camera-panel active" id="dual-cameras" role="tabpanel">
