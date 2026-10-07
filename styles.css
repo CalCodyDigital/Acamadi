@@ -5936,3 +5936,12 @@ body .technology-info-grid p {
 .camera-brand-tools>.camera-brand-overview{width:100%;min-width:0;margin-left:0}
 @media(max-width:980px){.camera-filter-row .camera-brand-filter{flex-basis:100%;justify-content:flex-start}}
 @media(max-width:720px){.camera-filter-row{gap:16px;margin-bottom:28px}.camera-filter-row .camera-tabs{width:100%}.camera-filter-row .camera-filter-label{flex-basis:100%;margin-bottom:2px}}
+
+/* Match brand choices to the camera setup segmented control. */
+.camera-brand-segments{display:inline-flex;gap:8px;padding:5px;border:1px solid var(--line);border-radius:999px;background:var(--cream)}
+.camera-brand-segments .camera-brand-button{display:inline-flex;align-items:center;justify-content:center;min-height:45px;padding:0 18px;border:0;border-radius:999px;background:transparent;color:var(--muted);font:inherit;font-size:13px;font-weight:700;white-space:nowrap}
+.camera-brand-segments .camera-brand-button:hover{transform:none}
+.camera-brand-segments .camera-brand-button.active{background:var(--navy);color:#fff}
+.camera-brand-segments .camera-brand-button:focus-visible{outline:2px solid var(--navy);outline-offset:2px}
+@media(max-width:720px){.camera-brand-segments{border-radius:10px}.camera-brand-segments .camera-brand-button{border-radius:8px;padding:0 10px}}
+@media(max-width:620px){.camera-brand-segments{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));width:100%}}
