@@ -5932,7 +5932,7 @@ body .technology-info-grid p {
 /* Keep camera setup and brand controls together. */
 .camera-filter-row{display:flex;align-items:center;flex-wrap:wrap;gap:18px 28px;margin-bottom:36px}
 .camera-filter-row .camera-tabs{margin-bottom:0;flex-shrink:0}
-.camera-filter-row .camera-brand-filter{flex:1;justify-content:flex-end}
+.camera-filter-row .camera-brand-filter{flex:1;justify-content:flex-start}
 .camera-brand-tools>.camera-brand-overview{width:100%;min-width:0;margin-left:0}
 @media(max-width:980px){.camera-filter-row .camera-brand-filter{flex-basis:100%;justify-content:flex-start}}
 @media(max-width:720px){.camera-filter-row{gap:16px;margin-bottom:28px}.camera-filter-row .camera-tabs{width:100%}.camera-filter-row .camera-filter-label{flex-basis:100%;margin-bottom:2px}}
