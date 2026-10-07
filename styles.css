@@ -5807,3 +5807,54 @@ body .technology-info-grid p {
 #areas {
   scroll-margin-top: 105px;
 }
+
+
+/* DASH CAM BRAND FILTERS */
+
+.camera-brand-tools{
+  display:flex;
+  align-items:flex-end;
+  justify-content:space-between;
+  gap:24px;
+  margin:0 0 28px;
+  padding:22px 0;
+  border-top:1px solid var(--line);
+  border-bottom:1px solid var(--line);
+}
+.camera-brand-filter{display:flex;align-items:center;gap:9px;flex-wrap:wrap}
+.camera-filter-label{margin-right:4px;color:var(--muted);font-size:12px;font-weight:700}
+.camera-brand-button{
+  appearance:none;
+  border:1px solid var(--line);
+  background:#fff;
+  color:var(--navy);
+  border-radius:999px;
+  padding:10px 15px;
+  font:700 12px/1 "Manrope",sans-serif;
+  cursor:pointer;
+  transition:border-color .2s,background-color .2s,color .2s,transform .2s;
+}
+.camera-brand-button:hover{transform:translateY(-1px);border-color:rgba(40,57,126,.4)}
+.camera-brand-button.active{background:var(--navy);border-color:var(--navy);color:#fff}
+.camera-brand-links{display:flex;align-items:center;gap:18px;flex-wrap:wrap;justify-content:flex-end}
+.camera-brand-links a{font-size:12px;font-weight:700;color:var(--navy)}
+.camera-brand-links a span{color:#9a7727;margin-left:4px}
+.camera-card[hidden]{display:none!important}
+.camera-panel.camera-panel-empty .camera-grid:after{
+  content:"No cameras from this brand are currently listed in this setup.";
+  display:block;
+  grid-column:1/-1;
+  padding:26px;
+  border:1px solid var(--line);
+  border-radius:8px;
+  color:var(--muted);
+  background:#fff;
+}
+.camera-brand-page-intro{max-width:760px;margin:0 0 36px;color:var(--muted);font-size:16px;line-height:1.75}
+.camera-brand-page-nav{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}
+.camera-brand-section{padding-top:58px!important}
+.camera-brand-section + .camera-brand-section{padding-top:10px!important}
+@media(max-width:820px){
+  .camera-brand-tools{align-items:flex-start;flex-direction:column}
+  .camera-brand-links{justify-content:flex-start}
+}

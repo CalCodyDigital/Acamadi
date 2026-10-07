@@ -43,6 +43,43 @@ if (cameraTabs.length) {
 }
 
 
+/* Dash cam brand filter */
+
+const cameraBrandButtons = document.querySelectorAll('[data-camera-brand-filter]');
+
+if (cameraBrandButtons.length) {
+  let activeCameraBrand = 'all';
+
+  const applyCameraBrandFilter = () => {
+    document.querySelectorAll('.camera-card[data-camera-brand]').forEach(card => {
+      const matches = activeCameraBrand === 'all' || card.dataset.cameraBrand === activeCameraBrand;
+      card.hidden = !matches;
+    });
+
+    document.querySelectorAll('.camera-panel').forEach(panel => {
+      const visibleCards = [...panel.querySelectorAll('.camera-card[data-camera-brand]')].filter(card => !card.hidden);
+      panel.classList.toggle('camera-panel-empty', visibleCards.length === 0);
+    });
+  };
+
+  cameraBrandButtons.forEach(button => {
+    button.addEventListener('click', () => {
+      activeCameraBrand = button.dataset.cameraBrandFilter || 'all';
+
+      cameraBrandButtons.forEach(item => {
+        const isActive = item === button;
+        item.classList.toggle('active', isActive);
+        item.setAttribute('aria-pressed', String(isActive));
+      });
+
+      applyCameraBrandFilter();
+    });
+  });
+
+  applyCameraBrandFilter();
+}
+
+
 /* Contact enquiry prefill */
 const enquiryForm=document.querySelector('[data-enquiry-form]');
 if(enquiryForm){

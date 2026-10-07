@@ -9,7 +9,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Montserrat:wght@500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css?v=19">
+  <link rel="stylesheet" href="styles.css?v=20">
 </head>
 
 <body>
@@ -100,6 +100,22 @@
           </p>
         </div>
 
+
+        <div class="camera-brand-tools">
+          <div class="camera-brand-filter" role="group" aria-label="Filter dash cams by brand">
+            <span class="camera-filter-label">Filter by brand</span>
+            <button type="button" class="camera-brand-button active" data-camera-brand-filter="all" aria-pressed="true">All brands</button>
+            <button type="button" class="camera-brand-button" data-camera-brand-filter="blackvue" aria-pressed="false">BlackVue</button>
+            <button type="button" class="camera-brand-button" data-camera-brand-filter="thinkware" aria-pressed="false">Thinkware</button>
+            <button type="button" class="camera-brand-button" data-camera-brand-filter="finevu" aria-pressed="false">FineVu</button>
+          </div>
+          <div class="camera-brand-links" aria-label="Dash cam brand pages">
+            <a href="blackvue-dashcams.html">BlackVue range <span>→</span></a>
+            <a href="thinkware-dashcams.html">Thinkware range <span>→</span></a>
+            <a href="finevu-dashcams.html">FineVu range <span>→</span></a>
+          </div>
+        </div>
+
         <div class="camera-tabs" role="tablist" aria-label="Dash cam type">
           <button class="camera-tab active" type="button" role="tab" aria-selected="true" aria-controls="dual-cameras" data-camera-tab="dual-cameras">
             Front + Rear
@@ -122,7 +138,7 @@
 
           <div class="camera-grid">
 
-          <article class="camera-card">
+          <article class="camera-card" data-camera-brand="blackvue">
             <div class="camera-card-image">
               <img src="images/dashcams/blackvue-dr970-lte-2ch.webp" alt="BlackVue DR970 LTE 2CH dash cam" loading="lazy">
             </div>
@@ -140,7 +156,7 @@
             </a>
           </article>
 
-          <article class="camera-card">
+          <article class="camera-card" data-camera-brand="blackvue">
             <div class="camera-card-image">
               <img src="images/dashcams/blackvue-dr970x-2ch.webp" alt="BlackVue DR970X 2CH dash cam" loading="lazy">
             </div>
@@ -158,7 +174,7 @@
             </a>
           </article>
 
-          <article class="camera-card">
+          <article class="camera-card" data-camera-brand="thinkware">
             <div class="camera-card-image">
               <img src="images/dashcams/thinkware-u3000-2ch.webp" alt="Thinkware U3000 2CH dash cam" loading="lazy">
             </div>
@@ -176,7 +192,7 @@
             </a>
           </article>
 
-          <article class="camera-card">
+          <article class="camera-card" data-camera-brand="blackvue">
             <div class="camera-card-image">
               <img src="images/dashcams/blackvue-dr770-lte-2ch.webp" alt="BlackVue DR770 LTE 2CH dash cam" loading="lazy">
             </div>
@@ -194,7 +210,7 @@
             </a>
           </article>
 
-          <article class="camera-card">
+          <article class="camera-card" data-camera-brand="finevu">
             <div class="camera-card-image">
               <img src="images/dashcams/finevu-gx1600-2ch.webp" alt="FineVu GX1600 2CH dash cam" loading="lazy">
             </div>
@@ -212,7 +228,7 @@
             </a>
           </article>
 
-          <article class="camera-card">
+          <article class="camera-card" data-camera-brand="blackvue">
             <div class="camera-card-image">
               <img src="images/dashcams/blackvue-dr770x-2ch.webp" alt="BlackVue DR770X 2CH dash cam" loading="lazy">
             </div>
@@ -230,7 +246,7 @@
             </a>
           </article>
 
-          <article class="camera-card">
+          <article class="camera-card" data-camera-brand="finevu">
             <div class="camera-card-image">
               <img src="images/dashcams/finevu-gx1100-4k-2ch.webp" alt="FineVu GX1100 4K 2CH dash cam" loading="lazy">
             </div>
@@ -248,7 +264,7 @@
             </a>
           </article>
 
-          <article class="camera-card">
+          <article class="camera-card" data-camera-brand="thinkware">
             <div class="camera-card-image">
               <img src="images/dashcams/thinkware-arc900-2ch.webp" alt="Thinkware ARC900 2CH dash cam" loading="lazy">
             </div>
@@ -266,7 +282,7 @@
             </a>
           </article>
 
-          <article class="camera-card">
+          <article class="camera-card" data-camera-brand="thinkware">
             <div class="camera-card-image">
               <img src="images/dashcams/thinkware-t700-lte-2ch.webp" alt="Thinkware T700 LTE 2CH dash cam" loading="lazy">
             </div>
@@ -284,7 +300,7 @@
             </a>
           </article>
 
-          <article class="camera-card">
+          <article class="camera-card" data-camera-brand="thinkware">
             <div class="camera-card-image">
               <img src="images/dashcams/thinkware-u1000-plus-2ch.webp" alt="Thinkware U1000 Plus 2CH dash cam" loading="lazy">
             </div>
@@ -302,7 +318,7 @@
             </a>
           </article>
 
-          <article class="camera-card">
+          <article class="camera-card" data-camera-brand="blackvue">
             <div class="camera-card-image">
               <img src="images/dashcams/blackvue-dr590x-2ch.webp" alt="BlackVue DR590X 2CH dash cam" loading="lazy">
             </div>
@@ -320,7 +336,7 @@
             </a>
           </article>
 
-          <article class="camera-card">
+          <article class="camera-card" data-camera-brand="thinkware">
             <div class="camera-card-image">
               <img src="images/dashcams/thinkware-q850-2ch.webp" alt="Thinkware Q850 2CH dash cam" loading="lazy">
             </div>
@@ -338,7 +354,7 @@
             </a>
           </article>
 
-          <article class="camera-card">
+          <article class="camera-card" data-camera-brand="finevu">
             <div class="camera-card-image">
               <img src="images/dashcams/finevu-gx1100-2ch.webp" alt="FineVu GX1100 2CH dash cam" loading="lazy">
             </div>
@@ -356,7 +372,7 @@
             </a>
           </article>
 
-          <article class="camera-card">
+          <article class="camera-card" data-camera-brand="thinkware">
             <div class="camera-card-image">
               <img src="images/dashcams/thinkware-arc700-2ch.webp" alt="Thinkware ARC700 2CH dash cam" loading="lazy">
             </div>
@@ -374,7 +390,7 @@
             </a>
           </article>
 
-          <article class="camera-card">
+          <article class="camera-card" data-camera-brand="finevu">
             <div class="camera-card-image">
               <img src="images/dashcams/finevu-gx400-2ch.webp" alt="FineVu GX400 bundle Front + Rear dash cam" loading="lazy">
             </div>
@@ -392,7 +408,7 @@
             </a>
           </article>
 
-          <article class="camera-card">
+          <article class="camera-card" data-camera-brand="thinkware">
             <div class="camera-card-image">
               <img src="images/dashcams/thinkware-x800-2ch.webp" alt="Thinkware X800 2CH dash cam" loading="lazy">
             </div>
@@ -410,7 +426,7 @@
             </a>
           </article>
 
-          <article class="camera-card">
+          <article class="camera-card" data-camera-brand="thinkware">
             <div class="camera-card-image">
               <img src="images/dashcams/thinkware-q200-2ch.webp" alt="Thinkware Q200 2CH dash cam" loading="lazy">
             </div>
@@ -428,7 +444,7 @@
             </a>
           </article>
 
-          <article class="camera-card">
+          <article class="camera-card" data-camera-brand="finevu">
             <div class="camera-card-image">
               <img src="images/dashcams/finevu-gx36-2ch.webp" alt="FineVu GX36 Front + Rear dash cam" loading="lazy">
             </div>
@@ -459,7 +475,7 @@
 
           <div class="camera-grid">
 
-          <article class="camera-card">
+          <article class="camera-card" data-camera-brand="blackvue">
             <div class="camera-card-image">
               <img src="images/dashcams/blackvue-dr970x-1ch.webp" alt="BlackVue DR970X 1CH dash cam" loading="lazy">
             </div>
@@ -477,7 +493,7 @@
             </a>
           </article>
 
-          <article class="camera-card">
+          <article class="camera-card" data-camera-brand="thinkware">
             <div class="camera-card-image">
               <img src="images/dashcams/thinkware-u3000-1ch.webp" alt="Thinkware U3000 1CH dash cam" loading="lazy">
             </div>
@@ -495,7 +511,7 @@
             </a>
           </article>
 
-          <article class="camera-card">
+          <article class="camera-card" data-camera-brand="blackvue">
             <div class="camera-card-image">
               <img src="images/dashcams/blackvue-dr770x-1ch.webp" alt="BlackVue DR770X 1CH dash cam" loading="lazy">
             </div>
@@ -513,7 +529,7 @@
             </a>
           </article>
 
-          <article class="camera-card">
+          <article class="camera-card" data-camera-brand="thinkware">
             <div class="camera-card-image">
               <img src="images/dashcams/thinkware-t700-lte-1ch.webp" alt="Thinkware T700 LTE 1CH dash cam" loading="lazy">
             </div>
@@ -531,7 +547,7 @@
             </a>
           </article>
 
-          <article class="camera-card">
+          <article class="camera-card" data-camera-brand="thinkware">
             <div class="camera-card-image">
               <img src="images/dashcams/thinkware-u1000-plus-1ch.webp" alt="Thinkware U1000 Plus 1CH dash cam" loading="lazy">
             </div>
@@ -549,7 +565,7 @@
             </a>
           </article>
 
-          <article class="camera-card">
+          <article class="camera-card" data-camera-brand="thinkware">
             <div class="camera-card-image">
               <img src="images/dashcams/thinkware-q850-1ch.webp" alt="Thinkware Q850 1CH dash cam" loading="lazy">
             </div>
@@ -567,7 +583,7 @@
             </a>
           </article>
 
-          <article class="camera-card">
+          <article class="camera-card" data-camera-brand="finevu">
             <div class="camera-card-image">
               <img src="images/dashcams/finevu-gx400-1ch.webp" alt="FineVu GX400 1CH dash cam" loading="lazy">
             </div>
@@ -585,7 +601,7 @@
             </a>
           </article>
 
-          <article class="camera-card">
+          <article class="camera-card" data-camera-brand="blackvue">
             <div class="camera-card-image">
               <img src="images/dashcams/blackvue-dr590x-1ch.webp" alt="BlackVue DR590X 1CH dash cam" loading="lazy">
             </div>
@@ -603,7 +619,7 @@
             </a>
           </article>
 
-          <article class="camera-card">
+          <article class="camera-card" data-camera-brand="thinkware">
             <div class="camera-card-image">
               <img src="images/dashcams/thinkware-x800-1ch.webp" alt="Thinkware X800 1CH dash cam" loading="lazy">
             </div>
@@ -621,7 +637,7 @@
             </a>
           </article>
 
-          <article class="camera-card">
+          <article class="camera-card" data-camera-brand="thinkware">
             <div class="camera-card-image">
               <img src="images/dashcams/thinkware-q200-1ch.webp" alt="Thinkware Q200 1CH dash cam" loading="lazy">
             </div>
@@ -639,7 +655,7 @@
             </a>
           </article>
 
-          <article class="camera-card">
+          <article class="camera-card" data-camera-brand="thinkware">
             <div class="camera-card-image">
               <img src="images/dashcams/thinkware-f70-pro-1ch.webp" alt="Thinkware F70 PRO 1CH dash cam" loading="lazy">
             </div>
@@ -755,7 +771,7 @@
 </footer>
 
 
-  <script src="script.js?v=2"></script>
+  <script src="script.js?v=3"></script>
 
 </body>
 </html>
