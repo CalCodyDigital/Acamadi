@@ -9,6 +9,7 @@
 <link rel="stylesheet" href="styles.css?v=18">
 </head>
 <body>
+<!-- CMS PREVIEW: Real enquiries are disabled on this branch. -->
 <header class="site-header" id="top"><div class="shell header-inner"><a class="brand" href="index.html" aria-label="ACAMADI Automotive home"><img src="images/acamadi-logo.png" alt="ACAMADI Automotive" class="brand-logo"></a><button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-nav" aria-label="Open menu"><span></span><span></span><span></span></button><nav class="primary-nav" id="primary-nav">
         <a href="/">Home</a><a href="index.html#services">Services</a><a href="index.html#about">About</a><a href="index.html#reviews">Reviews</a><a href="blogs/">Insights</a><a href="index.html#areas">Areas</a><a class="nav-cta" href="#enquiry-form">Get a quote</a></nav></div></header>
 <main>
@@ -27,7 +28,7 @@
   </div>
 </div>
 <div class="form-error" data-fs-error>Something went wrong while sending your enquiry. Please try again, or contact ACAMADI by phone or WhatsApp.</div>
-<form id="contact-form" class="enquiry-form" action="https://formspree.io/f/xqpagrpr" method="POST" data-enquiry-form>
+<form id="contact-form" class="enquiry-form" action="#" method="POST" data-enquiry-form>
 <input type="hidden" name="_subject" value="New ACAMADI website enquiry">
 <div class="form-field"><label for="name">Name *</label><input id="name" name="name" type="text" autocomplete="name" required data-fs-field></div>
 <div class="form-field"><label for="phone">Phone *</label><input id="phone" name="phone" type="tel" autocomplete="tel" required data-fs-field></div>
@@ -37,7 +38,7 @@
 <div class="form-field form-field-full"><label for="service">Service required *</label><select id="service" name="service" required data-fs-field><option value="">Please choose</option><option value="Detailing">Detailing</option><option value="Ceramic Coatings">Ceramic Coatings</option><option value="Mobile Valeting">Mobile Valeting</option><option value="Dash Cam Installation">Dash Cam Installation</option><option value="Dash Cam Supply & Installation">Dash Cam Supply & Installation</option><option value="Reverse Cameras">Reverse Cameras</option><option value="Vehicle Technology">CarPlay, Audio & Accessories</option><option value="Other / Not sure">Other / Not sure</option></select></div>
 <div class="form-field form-field-full" id="camera-field" hidden><label for="camera-model">Dash cam model</label><input id="camera-model" name="camera_model" type="text" readonly></div>
 <div class="form-field form-field-full"><label for="message">Tell us what you need *</label><textarea id="message" name="message" placeholder="Include anything useful about the vehicle, its condition, the installation required or your preferred dates." required data-fs-field></textarea></div>
-<div class="enquiry-submit"><button class="btn btn-primary" type="submit" data-fs-submit-btn>Send enquiry</button><p class="form-note">By submitting this form, you're asking ACAMADI to contact you about your enquiry.</p></div>
+<div class="enquiry-submit"><button class="btn btn-primary" type="button" disabled aria-disabled="true">Enquiries disabled on test website</button><p class="form-note">By submitting this form, you're asking ACAMADI to contact you about your enquiry.</p></div>
 </form></div>
 </div></section>
 <section class="contact-service-note"><div class="shell contact-service-note-inner"><p>Not sure which service or package is right? Choose “Other / Not sure” and describe what you're trying to achieve.</p><a class="btn btn-light" href="index.html#services">Explore services</a></div></section>
@@ -88,17 +89,5 @@
   </div>
 </footer>
 <script src="script.js?v=4"></script>
-<script>
-  window.formspree =
-    window.formspree ||
-    function () {
-      (formspree.q = formspree.q || []).push(arguments);
-    };
-
-  formspree('initForm', {
-    formElement: '#contact-form',
-    formId: 'xqpagrpr'
-  });
-</script>
-<script src="https://unpkg.com/@formspree/ajax@1" defer></script>
+<!-- Formspree intentionally disabled in CMS test branch. -->
 </body></html>
