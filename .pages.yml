@@ -527,22 +527,13 @@ content:
             label: Starting price (£)
             type: number
 
-  - name: dashcam_catalogue
-    label: "Dash cam catalogue & pricing"
+  - name: dashcam_blackvue
+    label: "BlackVue dash cams"
     type: file
-    path: content/dashcams.json
+    path: content/dashcams-blackvue.json
     format: json
     list: true
     fields:
-      - name: brand
-        label: Brand
-        type: select
-        required: true
-        options:
-          values:
-            - BlackVue
-            - Thinkware
-            - FineVu
       - name: model
         label: Model
         type: string
@@ -576,6 +567,89 @@ content:
       - name: enabled
         label: Show on website
         type: boolean
+
+  - name: dashcam_thinkware
+    label: "Thinkware dash cams"
+    type: file
+    path: content/dashcams-thinkware.json
+    format: json
+    list: true
+    fields:
+      - name: model
+        label: Model
+        type: string
+        required: true
+      - name: setup
+        label: Camera configuration
+        type: select
+        required: true
+        options:
+          values:
+            - name: front-rear
+              label: "Front + rear"
+            - name: front-only
+              label: "Front only"
+      - name: type
+        label: Camera type (e.g. 2CH)
+        type: string
+      - name: price
+        label: Camera price excluding fitting (£)
+        type: number
+        required: true
+      - name: image
+        label: Product image
+        type: image
+        options:
+          media: dashcam_images
+      - name: enquiry_model
+        label: Model name included in enquiries
+        type: string
+        description: Use the full model and configuration name, e.g. Thinkware U3000 2CH.
+      - name: enabled
+        label: Show on website
+        type: boolean
+
+  - name: dashcam_finevu
+    label: "FineVu dash cams"
+    type: file
+    path: content/dashcams-finevu.json
+    format: json
+    list: true
+    fields:
+      - name: model
+        label: Model
+        type: string
+        required: true
+      - name: setup
+        label: Camera configuration
+        type: select
+        required: true
+        options:
+          values:
+            - name: front-rear
+              label: "Front + rear"
+            - name: front-only
+              label: "Front only"
+      - name: type
+        label: Camera type (e.g. 2CH)
+        type: string
+      - name: price
+        label: Camera price excluding fitting (£)
+        type: number
+        required: true
+      - name: image
+        label: Product image
+        type: image
+        options:
+          media: dashcam_images
+      - name: enquiry_model
+        label: Model name included in enquiries
+        type: string
+        description: Use the full model and configuration name, e.g. Thinkware U3000 2CH.
+      - name: enabled
+        label: Show on website
+        type: boolean
+
 
   - name: verified_reviews
     label: "Verified customer reviews"
