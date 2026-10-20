@@ -118,9 +118,14 @@ content:
       - name: hero_eyebrow
         label: "Hero Eyebrow"
         type: string
-      - name: hero_heading
-        label: "Hero Heading"
+      - name: hero_heading_white
+        label: "Main heading — white text"
         type: string
+        description: First line of the headline, shown in white.
+      - name: hero_heading_yellow
+        label: "Main heading — yellow text"
+        type: string
+        description: Second line of the headline, shown in yellow.
       - name: hero_intro
         label: "Hero Intro"
         type: text
