@@ -15,6 +15,14 @@ media:
     extensions: [jpg, jpeg, png, webp]
     categories: [image]
 
+  - name: dashcam_images
+    label: Dash cam images
+    input: images/dashcams
+    output: /images/dashcams
+    rename: safe
+    extensions: [jpg, jpeg, png, webp]
+    categories: [image]
+
 content:
   - name: blog_posts
     label: Blog posts
@@ -266,6 +274,23 @@ content:
       - name: intro_paragraph_2
         label: "Intro paragraph two"
         type: text
+      - name: prices
+        label: Package and fitting prices
+        type: object
+        list:
+          collapsible:
+            collapsed: true
+            summary: "{label}: £{amount}"
+        description: Update existing package prices. The package order should stay the same.
+        fields:
+          - name: label
+            label: Package name
+            type: string
+            readonly: true
+          - name: amount
+            label: Starting price (£)
+            type: number
+
   - name: ceramic_coatings_page
     label: "Ceramic Coatings page"
     type: file
@@ -296,6 +321,23 @@ content:
       - name: intro_paragraph_2
         label: "Intro paragraph two"
         type: text
+      - name: prices
+        label: Package and fitting prices
+        type: object
+        list:
+          collapsible:
+            collapsed: true
+            summary: "{label}: £{amount}"
+        description: Update existing package prices. The package order should stay the same.
+        fields:
+          - name: label
+            label: Package name
+            type: string
+            readonly: true
+          - name: amount
+            label: Starting price (£)
+            type: number
+
   - name: valeting_page
     label: "Valeting page"
     type: file
@@ -326,6 +368,23 @@ content:
       - name: intro_paragraph_2
         label: "Intro paragraph two"
         type: text
+      - name: prices
+        label: Package and fitting prices
+        type: object
+        list:
+          collapsible:
+            collapsed: true
+            summary: "{label}: £{amount}"
+        description: Update existing package prices. The package order should stay the same.
+        fields:
+          - name: label
+            label: Package name
+            type: string
+            readonly: true
+          - name: amount
+            label: Starting price (£)
+            type: number
+
   - name: dash_cam_installation_page
     label: "Dash Cam Installation page"
     type: file
@@ -356,6 +415,23 @@ content:
       - name: intro_paragraph_2
         label: "Intro paragraph two"
         type: text
+      - name: prices
+        label: Package and fitting prices
+        type: object
+        list:
+          collapsible:
+            collapsed: true
+            summary: "{label}: £{amount}"
+        description: Update existing package prices. The package order should stay the same.
+        fields:
+          - name: label
+            label: Package name
+            type: string
+            readonly: true
+          - name: amount
+            label: Starting price (£)
+            type: number
+
   - name: reverse_cameras_page
     label: "Reverse Cameras page"
     type: file
@@ -386,6 +462,23 @@ content:
       - name: intro_paragraph_2
         label: "Intro paragraph two"
         type: text
+      - name: prices
+        label: Package and fitting prices
+        type: object
+        list:
+          collapsible:
+            collapsed: true
+            summary: "{label}: £{amount}"
+        description: Update existing package prices. The package order should stay the same.
+        fields:
+          - name: label
+            label: Package name
+            type: string
+            readonly: true
+          - name: amount
+            label: Starting price (£)
+            type: number
+
   - name: vehicle_technology_page
     label: "Vehicle Technology page"
     type: file
@@ -417,6 +510,23 @@ content:
         label: "Intro paragraph two"
         type: text
 
+      - name: prices
+        label: Package and fitting prices
+        type: object
+        list:
+          collapsible:
+            collapsed: true
+            summary: "{label}: £{amount}"
+        description: Update existing package prices. The package order should stay the same.
+        fields:
+          - name: label
+            label: Package name
+            type: string
+            readonly: true
+          - name: amount
+            label: Starting price (£)
+            type: number
+
   - name: dashcam_catalogue
     label: "Dash cam catalogue & pricing"
     type: file
@@ -443,10 +553,10 @@ content:
         required: true
         options:
           values:
-            - name: "Front + rear"
-              value: front-rear
-            - name: "Front only"
-              value: front-only
+            - name: front-rear
+              label: "Front + rear"
+            - name: front-only
+              label: "Front only"
       - name: type
         label: Camera type (e.g. 2CH)
         type: string
@@ -458,7 +568,7 @@ content:
         label: Product image
         type: image
         options:
-          media: site_media
+          media: dashcam_images
       - name: enquiry_model
         label: Model name included in enquiries
         type: string
