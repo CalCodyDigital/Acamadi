@@ -1,0 +1,139 @@
+{
+  "products": [
+    {
+      "model": "U3000",
+      "setup": "front-rear",
+      "type": "2CH",
+      "price": 529,
+      "image": "/images/dashcams/thinkware-u3000-2ch.webp",
+      "enquiry_model": "Thinkware U3000 2CH",
+      "enabled": true
+    },
+    {
+      "model": "ARC900",
+      "setup": "front-rear",
+      "type": "2CH",
+      "price": 369,
+      "image": "/images/dashcams/thinkware-arc900-2ch.webp",
+      "enquiry_model": "Thinkware ARC900 2CH",
+      "enabled": true
+    },
+    {
+      "model": "T700 LTE",
+      "setup": "front-rear",
+      "type": "2CH",
+      "price": 359,
+      "image": "/images/dashcams/thinkware-t700-lte-2ch.webp",
+      "enquiry_model": "Thinkware T700 LTE 2CH",
+      "enabled": true
+    },
+    {
+      "model": "U1000 Plus",
+      "setup": "front-rear",
+      "type": "2CH",
+      "price": 339,
+      "image": "/images/dashcams/thinkware-u1000-plus-2ch.webp",
+      "enquiry_model": "Thinkware U1000 Plus 2CH",
+      "enabled": true
+    },
+    {
+      "model": "Q850",
+      "setup": "front-rear",
+      "type": "2CH",
+      "price": 289,
+      "image": "/images/dashcams/thinkware-q850-2ch.webp",
+      "enquiry_model": "Thinkware Q850 2CH",
+      "enabled": true
+    },
+    {
+      "model": "ARC700",
+      "setup": "front-rear",
+      "type": "2CH",
+      "price": 249,
+      "image": "/images/dashcams/thinkware-arc700-2ch.webp",
+      "enquiry_model": "Thinkware ARC700 2CH",
+      "enabled": true
+    },
+    {
+      "model": "X800",
+      "setup": "front-rear",
+      "type": "2CH",
+      "price": 249,
+      "image": "/images/dashcams/thinkware-x800-2ch.webp",
+      "enquiry_model": "Thinkware X800 2CH",
+      "enabled": true
+    },
+    {
+      "model": "Q200",
+      "setup": "front-rear",
+      "type": "2CH",
+      "price": 219,
+      "image": "/images/dashcams/thinkware-q200-2ch.webp",
+      "enquiry_model": "Thinkware Q200 2CH",
+      "enabled": true
+    },
+    {
+      "model": "U3000",
+      "setup": "front-only",
+      "type": "1CH",
+      "price": 399,
+      "image": "/images/dashcams/thinkware-u3000-1ch.webp",
+      "enquiry_model": "Thinkware U3000 1CH",
+      "enabled": true
+    },
+    {
+      "model": "T700 LTE",
+      "setup": "front-only",
+      "type": "1CH",
+      "price": 279,
+      "image": "/images/dashcams/thinkware-t700-lte-1ch.webp",
+      "enquiry_model": "Thinkware T700 LTE 1CH",
+      "enabled": true
+    },
+    {
+      "model": "U1000 Plus",
+      "setup": "front-only",
+      "type": "1CH",
+      "price": 249,
+      "image": "/images/dashcams/thinkware-u1000-plus-1ch.webp",
+      "enquiry_model": "Thinkware U1000 Plus 1CH",
+      "enabled": true
+    },
+    {
+      "model": "Q850",
+      "setup": "front-only",
+      "type": "1CH",
+      "price": 219,
+      "image": "/images/dashcams/thinkware-q850-1ch.webp",
+      "enquiry_model": "Thinkware Q850 1CH",
+      "enabled": true
+    },
+    {
+      "model": "X800",
+      "setup": "front-only",
+      "type": "1CH",
+      "price": 199,
+      "image": "/images/dashcams/thinkware-x800-1ch.webp",
+      "enquiry_model": "Thinkware X800 1CH",
+      "enabled": true
+    },
+    {
+      "model": "Q200",
+      "setup": "front-only",
+      "type": "1CH",
+      "price": 159,
+      "image": "/images/dashcams/thinkware-q200-1ch.webp",
+      "enquiry_model": "Thinkware Q200 1CH",
+      "enabled": true
+    },
+    {
+      "model": "F70 PRO",
+      "setup": "front-only",
+      "type": "1CH",
+      "price": 125,
+      "image": "/images/dashcams/thinkware-f70-pro-1ch.webp",
+      "enquiry_model": "Thinkware F70 PRO 1CH",
+      "enabled": true
+    }
+  ]
+}
