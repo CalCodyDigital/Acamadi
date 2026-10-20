@@ -60,7 +60,9 @@
 
     // CMS image paths must be local to the repository.
     const safeImage = value => typeof value === "string" &&
-      /^\\/?images\\/cms\\/[a-zA-Z0-9_.\\/%-]+$/.test(value) && !value.includes("..");
+      value.startsWith("/images/cms/") &&
+      !value.includes("..") &&
+      /^[a-zA-Z0-9_./%-]+$/.test(value);
     const heroImage = data.hero_photo;
     if (safeImage(heroImage)) {
       const img = "/" + heroImage.replace(/^\\//, "");
