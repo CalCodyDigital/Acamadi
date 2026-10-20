@@ -1,6 +1,7 @@
 /* CMS-managed copy for ACAMADI individual service pages. */
 (async()=>{
-  const slug=location.pathname.split('/').pop().replace(/\\.html$/,'');
+  const file=location.pathname.split('/').pop();
+  const slug=file.endsWith('.html')?file.slice(0,-5):file;
   const valid=["detailing","ceramic-coatings","valeting","dash-cam-installation","reverse-cameras","vehicle-technology"];
   if(!valid.includes(slug))return;
   try{
