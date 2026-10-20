@@ -236,6 +236,187 @@ content:
         label: "Cta Text"
         type: text
 
+  - name: detailing_page
+    label: "Detailing page"
+    type: file
+    path: content/pages/detailing.json
+    format: json
+    fields:
+      - name: hero_label
+        label: "Small heading"
+        type: string
+      - name: hero_white
+        label: "Headline — white"
+        type: string
+      - name: hero_yellow
+        label: "Headline — yellow"
+        type: string
+      - name: hero_description
+        label: "Hero description"
+        type: text
+      - name: intro_label
+        label: "Intro small heading"
+        type: string
+      - name: intro_heading
+        label: "Intro heading"
+        type: string
+      - name: intro_paragraph_1
+        label: "Intro paragraph one"
+        type: text
+      - name: intro_paragraph_2
+        label: "Intro paragraph two"
+        type: text
+  - name: ceramic_coatings_page
+    label: "Ceramic Coatings page"
+    type: file
+    path: content/pages/ceramic-coatings.json
+    format: json
+    fields:
+      - name: hero_label
+        label: "Small heading"
+        type: string
+      - name: hero_white
+        label: "Headline — white"
+        type: string
+      - name: hero_yellow
+        label: "Headline — yellow"
+        type: string
+      - name: hero_description
+        label: "Hero description"
+        type: text
+      - name: intro_label
+        label: "Intro small heading"
+        type: string
+      - name: intro_heading
+        label: "Intro heading"
+        type: string
+      - name: intro_paragraph_1
+        label: "Intro paragraph one"
+        type: text
+      - name: intro_paragraph_2
+        label: "Intro paragraph two"
+        type: text
+  - name: valeting_page
+    label: "Valeting page"
+    type: file
+    path: content/pages/valeting.json
+    format: json
+    fields:
+      - name: hero_label
+        label: "Small heading"
+        type: string
+      - name: hero_white
+        label: "Headline — white"
+        type: string
+      - name: hero_yellow
+        label: "Headline — yellow"
+        type: string
+      - name: hero_description
+        label: "Hero description"
+        type: text
+      - name: intro_label
+        label: "Intro small heading"
+        type: string
+      - name: intro_heading
+        label: "Intro heading"
+        type: string
+      - name: intro_paragraph_1
+        label: "Intro paragraph one"
+        type: text
+      - name: intro_paragraph_2
+        label: "Intro paragraph two"
+        type: text
+  - name: dash_cam_installation_page
+    label: "Dash Cam Installation page"
+    type: file
+    path: content/pages/dash-cam-installation.json
+    format: json
+    fields:
+      - name: hero_label
+        label: "Small heading"
+        type: string
+      - name: hero_white
+        label: "Headline — white"
+        type: string
+      - name: hero_yellow
+        label: "Headline — yellow"
+        type: string
+      - name: hero_description
+        label: "Hero description"
+        type: text
+      - name: intro_label
+        label: "Intro small heading"
+        type: string
+      - name: intro_heading
+        label: "Intro heading"
+        type: string
+      - name: intro_paragraph_1
+        label: "Intro paragraph one"
+        type: text
+      - name: intro_paragraph_2
+        label: "Intro paragraph two"
+        type: text
+  - name: reverse_cameras_page
+    label: "Reverse Cameras page"
+    type: file
+    path: content/pages/reverse-cameras.json
+    format: json
+    fields:
+      - name: hero_label
+        label: "Small heading"
+        type: string
+      - name: hero_white
+        label: "Headline — white"
+        type: string
+      - name: hero_yellow
+        label: "Headline — yellow"
+        type: string
+      - name: hero_description
+        label: "Hero description"
+        type: text
+      - name: intro_label
+        label: "Intro small heading"
+        type: string
+      - name: intro_heading
+        label: "Intro heading"
+        type: string
+      - name: intro_paragraph_1
+        label: "Intro paragraph one"
+        type: text
+      - name: intro_paragraph_2
+        label: "Intro paragraph two"
+        type: text
+  - name: vehicle_technology_page
+    label: "Vehicle Technology page"
+    type: file
+    path: content/pages/vehicle-technology.json
+    format: json
+    fields:
+      - name: hero_label
+        label: "Small heading"
+        type: string
+      - name: hero_white
+        label: "Headline — white"
+        type: string
+      - name: hero_yellow
+        label: "Headline — yellow"
+        type: string
+      - name: hero_description
+        label: "Hero description"
+        type: text
+      - name: intro_label
+        label: "Intro small heading"
+        type: string
+      - name: intro_heading
+        label: "Intro heading"
+        type: string
+      - name: intro_paragraph_1
+        label: "Intro paragraph one"
+        type: text
+      - name: intro_paragraph_2
+        label: "Intro paragraph two"
+        type: text
+
 settings:
   content:
     merge: true
