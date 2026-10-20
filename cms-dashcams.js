@@ -6,10 +6,18 @@
   };
   if (!grids["front-rear"] || !grids["front-only"]) return;
   try {
-    const response = await fetch("/content/dashcams.json", {cache:"no-cache"});
-    if (!response.ok) throw new Error("Dash cam catalogue unavailable");
-    const items = await response.json();
-    if (!Array.isArray(items)) throw new Error("Invalid catalogue");
+    const brandFiles = [
+      ["BlackVue", "/content/dashcams-blackvue.json"],
+      ["Thinkware", "/content/dashcams-thinkware.json"],
+      ["FineVu", "/content/dashcams-finevu.json"]
+    ];
+    const responses = await Promise.all(brandFiles.map(([,path]) => fetch(path, {cache:"no-cache"})));
+    if (responses.some(r => !r.ok)) throw new Error("One or more brand catalogues unavailable");
+    const records = await Promise.all(responses.map(r => r.json()));
+    if (records.some(items => !Array.isArray(items))) throw new Error("Invalid brand catalogue");
+    const items = records.flatMap((entries, index) =>
+      entries.map(entry => ({...entry, brand: brandFiles[index][0]}))
+    );
     const brands = new Set(["blackvue","thinkware","finevu"]);
     const grouped = {"front-rear":[], "front-only":[]};
     const make = (tag, className, value) => {
