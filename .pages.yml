@@ -24,652 +24,677 @@ media:
     categories: [image]
 
 content:
-  - name: blog_posts
-    label: Blog posts
-    type: collection
-    path: _posts
-    format: yaml-frontmatter
-    filename:
-      template: "{date}-{title}.md"
-      field: create
-    view:
-      primary: title
-      sort: date
-      order: desc
-    fields:
-      - name: layout
-        type: string
-        default: blog-post
-        hidden: true
-      - name: title
-        label: Article title
-        type: string
-        required: true
-      - name: date
-        label: Publish date
-        type: date
-        required: true
-        options:
-          format: yyyy-MM-dd
-      - name: category
-        label: Category
-        type: select
-        required: true
-        options:
-          values:
-            - Detailing
-            - Valeting
-            - Ceramic Coatings
-            - Dash Cams
-            - Reverse Cameras
-            - Vehicle Technology
-            - Car Care
-      - name: read_time
-        label: Read time
-        type: string
-        default: 5 min read
-      - name: excerpt
-        label: Card summary
-        type: text
-        required: true
-        description: Short summary used on the Blogs page.
-      - name: image
-        label: Featured image
-        type: image
-        options:
-          media: blog_images
-          path: images/blog
-          extensions: [jpg, jpeg, png, webp]
-          rename: safe
-      - name: image_alt
-        label: Image alt text
-        type: string
-      - name: seo_title
-        label: SEO title
-        type: string
-        description: Optional. Leave blank to use the article title.
-      - name: seo_description
-        label: Meta description
-        type: text
-        description: Aim for roughly 140–160 characters.
-      - name: cta_title
-        label: CTA heading
-        type: string
-        default: Need help with your vehicle?
-      - name: cta_text
-        label: CTA text
-        type: text
-        default: Tell ACAMADI what you need and get a tailored recommendation.
-      - name: cta_link
-        label: CTA link
-        type: string
-        default: /index.html#services
-      - name: cta_label
-        label: CTA button label
-        type: string
-        default: Explore services
-      - name: body
-        label: Article
-        type: rich-text
-        required: true
-        options:
-          format: markdown
-          switcher: true
-          media: false
-
-  - name: home_content
-    label: "Homepage"
-    type: file
-    path: content/home.json
-    format: json
-    fields:
-      - name: hero_eyebrow
-        label: "Hero Eyebrow"
-        type: string
-      - name: hero_heading_white
-        label: "Main heading — white text"
-        type: string
-        description: First line of the headline, shown in white.
-      - name: hero_heading_yellow
-        label: "Main heading — yellow text"
-        type: string
-        description: Second line of the headline, shown in yellow.
-      - name: hero_intro
-        label: "Hero Intro"
-        type: text
-      - name: hero_photo
-        label: "Hero Photo"
-        type: image
-        options:
-          media: site_media
-  - name: services_content
-    label: "Services overview"
-    type: file
-    path: content/services.json
-    format: json
-    fields:
-      - name: services_eyebrow
-        label: "Services Eyebrow"
-        type: string
-      - name: services_heading
-        label: "Services Heading"
-        type: string
-      - name: services_intro
-        label: "Services Intro"
-        type: text
-      - name: service_1_title
-        label: "Service 1 Title"
-        type: string
-      - name: service_1_description
-        label: "Service 1 Description"
-        type: text
-      - name: service_2_title
-        label: "Service 2 Title"
-        type: string
-      - name: service_2_description
-        label: "Service 2 Description"
-        type: text
-      - name: service_3_title
-        label: "Service 3 Title"
-        type: string
-      - name: service_3_description
-        label: "Service 3 Description"
-        type: text
-      - name: service_4_title
-        label: "Service 4 Title"
-        type: string
-      - name: service_4_description
-        label: "Service 4 Description"
-        type: text
-      - name: service_5_title
-        label: "Service 5 Title"
-        type: string
-      - name: service_5_description
-        label: "Service 5 Description"
-        type: text
-      - name: service_6_title
-        label: "Service 6 Title"
-        type: string
-      - name: service_6_description
-        label: "Service 6 Description"
-        type: text
-  - name: about_content
-    label: "About & showcase"
-    type: file
-    path: content/about.json
-    format: json
-    fields:
-      - name: about_eyebrow
-        label: "About Eyebrow"
-        type: string
-      - name: about_heading
-        label: "About Heading"
-        type: string
-      - name: about_paragraph_1
-        label: "About Paragraph 1"
-        type: text
-      - name: about_paragraph_2
-        label: "About Paragraph 2"
-        type: text
-      - name: showcase_eyebrow
-        label: "Showcase Eyebrow"
-        type: string
-      - name: showcase_heading
-        label: "Showcase Heading"
-        type: string
-      - name: showcase_text
-        label: "Showcase Text"
-        type: text
-      - name: showcase_photo
-        label: "Showcase Photo"
-        type: image
-        options:
-          media: site_media
-  - name: areas_content
-    label: "Service area & CTA"
-    type: file
-    path: content/areas.json
-    format: json
-    fields:
-      - name: area_heading
-        label: "Area Heading"
-        type: string
-      - name: area_text
-        label: "Area Text"
-        type: text
-      - name: cta_heading
-        label: "Cta Heading"
-        type: string
-      - name: cta_text
-        label: "Cta Text"
-        type: text
-
-  - name: detailing_page
-    label: "Detailing page"
-    type: file
-    path: content/pages/detailing.json
-    format: json
-    fields:
-      - name: hero_label
-        label: "Small heading"
-        type: string
-      - name: hero_white
-        label: "Headline — white"
-        type: string
-      - name: hero_yellow
-        label: "Headline — yellow"
-        type: string
-      - name: hero_description
-        label: "Hero description"
-        type: text
-      - name: intro_label
-        label: "Intro small heading"
-        type: string
-      - name: intro_heading
-        label: "Intro heading"
-        type: string
-      - name: intro_paragraph_1
-        label: "Intro paragraph one"
-        type: text
-      - name: intro_paragraph_2
-        label: "Intro paragraph two"
-        type: text
-      - name: prices
-        label: Package and fitting prices
-        type: object
-        list:
-          collapsible:
-            collapsed: true
-            summary: "{label}: £{amount}"
-        description: Update existing package prices. The package order should stay the same.
+  - name: website
+    label: "Website content"
+    type: group
+    items:
+      - name: home_content
+        label: "Homepage"
+        type: file
+        path: content/home.json
+        format: json
         fields:
-          - name: label
-            label: Package name
+          - name: hero_eyebrow
+            label: "Hero Eyebrow"
             type: string
-            readonly: true
-          - name: amount
-            label: Starting price (£)
-            type: number
-
-  - name: ceramic_coatings_page
-    label: "Ceramic Coatings page"
-    type: file
-    path: content/pages/ceramic-coatings.json
-    format: json
-    fields:
-      - name: hero_label
-        label: "Small heading"
-        type: string
-      - name: hero_white
-        label: "Headline — white"
-        type: string
-      - name: hero_yellow
-        label: "Headline — yellow"
-        type: string
-      - name: hero_description
-        label: "Hero description"
-        type: text
-      - name: intro_label
-        label: "Intro small heading"
-        type: string
-      - name: intro_heading
-        label: "Intro heading"
-        type: string
-      - name: intro_paragraph_1
-        label: "Intro paragraph one"
-        type: text
-      - name: intro_paragraph_2
-        label: "Intro paragraph two"
-        type: text
-      - name: prices
-        label: Package and fitting prices
-        type: object
-        list:
-          collapsible:
-            collapsed: true
-            summary: "{label}: £{amount}"
-        description: Update existing package prices. The package order should stay the same.
+          - name: hero_heading_white
+            label: "Main heading — white text"
+            type: string
+            description: First line of the headline, shown in white.
+          - name: hero_heading_yellow
+            label: "Main heading — yellow text"
+            type: string
+            description: Second line of the headline, shown in yellow.
+          - name: hero_intro
+            label: "Hero Intro"
+            type: text
+          - name: hero_photo
+            label: "Hero Photo"
+            type: image
+            options:
+              media: site_media
+      - name: services_content
+        label: "Services"
+        type: file
+        path: content/services.json
+        format: json
         fields:
-          - name: label
-            label: Package name
+          - name: services_eyebrow
+            label: "Services Eyebrow"
             type: string
-            readonly: true
-          - name: amount
-            label: Starting price (£)
-            type: number
-
-  - name: valeting_page
-    label: "Valeting page"
-    type: file
-    path: content/pages/valeting.json
-    format: json
-    fields:
-      - name: hero_label
-        label: "Small heading"
-        type: string
-      - name: hero_white
-        label: "Headline — white"
-        type: string
-      - name: hero_yellow
-        label: "Headline — yellow"
-        type: string
-      - name: hero_description
-        label: "Hero description"
-        type: text
-      - name: intro_label
-        label: "Intro small heading"
-        type: string
-      - name: intro_heading
-        label: "Intro heading"
-        type: string
-      - name: intro_paragraph_1
-        label: "Intro paragraph one"
-        type: text
-      - name: intro_paragraph_2
-        label: "Intro paragraph two"
-        type: text
-      - name: prices
-        label: Package and fitting prices
-        type: object
-        list:
-          collapsible:
-            collapsed: true
-            summary: "{label}: £{amount}"
-        description: Update existing package prices. The package order should stay the same.
+          - name: services_heading
+            label: "Services Heading"
+            type: string
+          - name: services_intro
+            label: "Services Intro"
+            type: text
+          - name: service_1_title
+            label: "Service 1 Title"
+            type: string
+          - name: service_1_description
+            label: "Service 1 Description"
+            type: text
+          - name: service_2_title
+            label: "Service 2 Title"
+            type: string
+          - name: service_2_description
+            label: "Service 2 Description"
+            type: text
+          - name: service_3_title
+            label: "Service 3 Title"
+            type: string
+          - name: service_3_description
+            label: "Service 3 Description"
+            type: text
+          - name: service_4_title
+            label: "Service 4 Title"
+            type: string
+          - name: service_4_description
+            label: "Service 4 Description"
+            type: text
+          - name: service_5_title
+            label: "Service 5 Title"
+            type: string
+          - name: service_5_description
+            label: "Service 5 Description"
+            type: text
+          - name: service_6_title
+            label: "Service 6 Title"
+            type: string
+          - name: service_6_description
+            label: "Service 6 Description"
+            type: text
+      - name: about_content
+        label: "About"
+        type: file
+        path: content/about.json
+        format: json
         fields:
-          - name: label
-            label: Package name
+          - name: about_eyebrow
+            label: "About Eyebrow"
             type: string
-            readonly: true
-          - name: amount
-            label: Starting price (£)
-            type: number
-
-  - name: dash_cam_installation_page
-    label: "Dash Cam Installation page"
-    type: file
-    path: content/pages/dash-cam-installation.json
-    format: json
-    fields:
-      - name: hero_label
-        label: "Small heading"
-        type: string
-      - name: hero_white
-        label: "Headline — white"
-        type: string
-      - name: hero_yellow
-        label: "Headline — yellow"
-        type: string
-      - name: hero_description
-        label: "Hero description"
-        type: text
-      - name: intro_label
-        label: "Intro small heading"
-        type: string
-      - name: intro_heading
-        label: "Intro heading"
-        type: string
-      - name: intro_paragraph_1
-        label: "Intro paragraph one"
-        type: text
-      - name: intro_paragraph_2
-        label: "Intro paragraph two"
-        type: text
-      - name: prices
-        label: Package and fitting prices
-        type: object
-        list:
-          collapsible:
-            collapsed: true
-            summary: "{label}: £{amount}"
-        description: Update existing package prices. The package order should stay the same.
+          - name: about_heading
+            label: "About Heading"
+            type: string
+          - name: about_paragraph_1
+            label: "About Paragraph 1"
+            type: text
+          - name: about_paragraph_2
+            label: "About Paragraph 2"
+            type: text
+          - name: showcase_eyebrow
+            label: "Showcase Eyebrow"
+            type: string
+          - name: showcase_heading
+            label: "Showcase Heading"
+            type: string
+          - name: showcase_text
+            label: "Showcase Text"
+            type: text
+          - name: showcase_photo
+            label: "Showcase Photo"
+            type: image
+            options:
+              media: site_media
+      - name: areas_content
+        label: "Areas & contact"
+        type: file
+        path: content/areas.json
+        format: json
         fields:
-          - name: label
-            label: Package name
+          - name: area_heading
+            label: "Area Heading"
             type: string
-            readonly: true
-          - name: amount
-            label: Starting price (£)
-            type: number
-
-  - name: reverse_cameras_page
-    label: "Reverse Cameras page"
-    type: file
-    path: content/pages/reverse-cameras.json
-    format: json
-    fields:
-      - name: hero_label
-        label: "Small heading"
-        type: string
-      - name: hero_white
-        label: "Headline — white"
-        type: string
-      - name: hero_yellow
-        label: "Headline — yellow"
-        type: string
-      - name: hero_description
-        label: "Hero description"
-        type: text
-      - name: intro_label
-        label: "Intro small heading"
-        type: string
-      - name: intro_heading
-        label: "Intro heading"
-        type: string
-      - name: intro_paragraph_1
-        label: "Intro paragraph one"
-        type: text
-      - name: intro_paragraph_2
-        label: "Intro paragraph two"
-        type: text
-      - name: prices
-        label: Package and fitting prices
-        type: object
-        list:
-          collapsible:
-            collapsed: true
-            summary: "{label}: £{amount}"
-        description: Update existing package prices. The package order should stay the same.
+          - name: area_text
+            label: "Area Text"
+            type: text
+          - name: cta_heading
+            label: "Cta Heading"
+            type: string
+          - name: cta_text
+            label: "Cta Text"
+            type: text
+  - name: services
+    label: "Service pages"
+    type: group
+    items:
+      - name: detailing_page
+        label: "Detailing"
+        type: file
+        path: content/pages/detailing.json
+        format: json
         fields:
-          - name: label
-            label: Package name
+          - name: hero_label
+            label: "Small heading"
             type: string
-            readonly: true
-          - name: amount
-            label: Starting price (£)
-            type: number
-
-  - name: vehicle_technology_page
-    label: "Vehicle Technology page"
-    type: file
-    path: content/pages/vehicle-technology.json
-    format: json
-    fields:
-      - name: hero_label
-        label: "Small heading"
-        type: string
-      - name: hero_white
-        label: "Headline — white"
-        type: string
-      - name: hero_yellow
-        label: "Headline — yellow"
-        type: string
-      - name: hero_description
-        label: "Hero description"
-        type: text
-      - name: intro_label
-        label: "Intro small heading"
-        type: string
-      - name: intro_heading
-        label: "Intro heading"
-        type: string
-      - name: intro_paragraph_1
-        label: "Intro paragraph one"
-        type: text
-      - name: intro_paragraph_2
-        label: "Intro paragraph two"
-        type: text
-
-      - name: prices
-        label: Package and fitting prices
-        type: object
-        list:
-          collapsible:
-            collapsed: true
-            summary: "{label}: £{amount}"
-        description: Update existing package prices. The package order should stay the same.
+          - name: hero_white
+            label: "Headline — white"
+            type: string
+          - name: hero_yellow
+            label: "Headline — yellow"
+            type: string
+          - name: hero_description
+            label: "Hero description"
+            type: text
+          - name: intro_label
+            label: "Intro small heading"
+            type: string
+          - name: intro_heading
+            label: "Intro heading"
+            type: string
+          - name: intro_paragraph_1
+            label: "Intro paragraph one"
+            type: text
+          - name: intro_paragraph_2
+            label: "Intro paragraph two"
+            type: text
+          - name: prices
+            label: Package and fitting prices
+            type: object
+            list:
+              collapsible:
+                collapsed: true
+                summary: "{label}: £{amount}"
+            description: Update existing package prices. The package order should stay the same.
+            fields:
+              - name: label
+                label: Package name
+                type: string
+                readonly: true
+              - name: amount
+                label: Starting price (£)
+                type: number
+      - name: ceramic_coatings_page
+        label: "Ceramic coatings"
+        type: file
+        path: content/pages/ceramic-coatings.json
+        format: json
         fields:
-          - name: label
-            label: Package name
+          - name: hero_label
+            label: "Small heading"
             type: string
-            readonly: true
-          - name: amount
-            label: Starting price (£)
+          - name: hero_white
+            label: "Headline — white"
+            type: string
+          - name: hero_yellow
+            label: "Headline — yellow"
+            type: string
+          - name: hero_description
+            label: "Hero description"
+            type: text
+          - name: intro_label
+            label: "Intro small heading"
+            type: string
+          - name: intro_heading
+            label: "Intro heading"
+            type: string
+          - name: intro_paragraph_1
+            label: "Intro paragraph one"
+            type: text
+          - name: intro_paragraph_2
+            label: "Intro paragraph two"
+            type: text
+          - name: prices
+            label: Package and fitting prices
+            type: object
+            list:
+              collapsible:
+                collapsed: true
+                summary: "{label}: £{amount}"
+            description: Update existing package prices. The package order should stay the same.
+            fields:
+              - name: label
+                label: Package name
+                type: string
+                readonly: true
+              - name: amount
+                label: Starting price (£)
+                type: number
+      - name: valeting_page
+        label: "Valeting"
+        type: file
+        path: content/pages/valeting.json
+        format: json
+        fields:
+          - name: hero_label
+            label: "Small heading"
+            type: string
+          - name: hero_white
+            label: "Headline — white"
+            type: string
+          - name: hero_yellow
+            label: "Headline — yellow"
+            type: string
+          - name: hero_description
+            label: "Hero description"
+            type: text
+          - name: intro_label
+            label: "Intro small heading"
+            type: string
+          - name: intro_heading
+            label: "Intro heading"
+            type: string
+          - name: intro_paragraph_1
+            label: "Intro paragraph one"
+            type: text
+          - name: intro_paragraph_2
+            label: "Intro paragraph two"
+            type: text
+          - name: prices
+            label: Package and fitting prices
+            type: object
+            list:
+              collapsible:
+                collapsed: true
+                summary: "{label}: £{amount}"
+            description: Update existing package prices. The package order should stay the same.
+            fields:
+              - name: label
+                label: Package name
+                type: string
+                readonly: true
+              - name: amount
+                label: Starting price (£)
+                type: number
+      - name: dash_cam_installation_page
+        label: "Dash cam fitting"
+        type: file
+        path: content/pages/dash-cam-installation.json
+        format: json
+        fields:
+          - name: hero_label
+            label: "Small heading"
+            type: string
+          - name: hero_white
+            label: "Headline — white"
+            type: string
+          - name: hero_yellow
+            label: "Headline — yellow"
+            type: string
+          - name: hero_description
+            label: "Hero description"
+            type: text
+          - name: intro_label
+            label: "Intro small heading"
+            type: string
+          - name: intro_heading
+            label: "Intro heading"
+            type: string
+          - name: intro_paragraph_1
+            label: "Intro paragraph one"
+            type: text
+          - name: intro_paragraph_2
+            label: "Intro paragraph two"
+            type: text
+          - name: prices
+            label: Package and fitting prices
+            type: object
+            list:
+              collapsible:
+                collapsed: true
+                summary: "{label}: £{amount}"
+            description: Update existing package prices. The package order should stay the same.
+            fields:
+              - name: label
+                label: Package name
+                type: string
+                readonly: true
+              - name: amount
+                label: Starting price (£)
+                type: number
+      - name: reverse_cameras_page
+        label: "Reverse cameras"
+        type: file
+        path: content/pages/reverse-cameras.json
+        format: json
+        fields:
+          - name: hero_label
+            label: "Small heading"
+            type: string
+          - name: hero_white
+            label: "Headline — white"
+            type: string
+          - name: hero_yellow
+            label: "Headline — yellow"
+            type: string
+          - name: hero_description
+            label: "Hero description"
+            type: text
+          - name: intro_label
+            label: "Intro small heading"
+            type: string
+          - name: intro_heading
+            label: "Intro heading"
+            type: string
+          - name: intro_paragraph_1
+            label: "Intro paragraph one"
+            type: text
+          - name: intro_paragraph_2
+            label: "Intro paragraph two"
+            type: text
+          - name: prices
+            label: Package and fitting prices
+            type: object
+            list:
+              collapsible:
+                collapsed: true
+                summary: "{label}: £{amount}"
+            description: Update existing package prices. The package order should stay the same.
+            fields:
+              - name: label
+                label: Package name
+                type: string
+                readonly: true
+              - name: amount
+                label: Starting price (£)
+                type: number
+      - name: vehicle_technology_page
+        label: "Vehicle technology"
+        type: file
+        path: content/pages/vehicle-technology.json
+        format: json
+        fields:
+          - name: hero_label
+            label: "Small heading"
+            type: string
+          - name: hero_white
+            label: "Headline — white"
+            type: string
+          - name: hero_yellow
+            label: "Headline — yellow"
+            type: string
+          - name: hero_description
+            label: "Hero description"
+            type: text
+          - name: intro_label
+            label: "Intro small heading"
+            type: string
+          - name: intro_heading
+            label: "Intro heading"
+            type: string
+          - name: intro_paragraph_1
+            label: "Intro paragraph one"
+            type: text
+          - name: intro_paragraph_2
+            label: "Intro paragraph two"
+            type: text
+    
+          - name: prices
+            label: Package and fitting prices
+            type: object
+            list:
+              collapsible:
+                collapsed: true
+                summary: "{label}: £{amount}"
+            description: Update existing package prices. The package order should stay the same.
+            fields:
+              - name: label
+                label: Package name
+                type: string
+                readonly: true
+              - name: amount
+                label: Starting price (£)
+                type: number
+  - name: cameras
+    label: "Dash cam catalogue"
+    type: group
+    items:
+      - name: dashcam_blackvue
+        label: "BlackVue"
+        type: file
+        path: content/catalogue-blackvue.json
+        format: json
+        fields:
+          - name: products
+            label: "Camera models"
+            type: object
+            list:
+              collapsible:
+                collapsed: true
+                summary: "{model} — £{price}"
+            fields:
+              - name: model
+                label: Model
+                type: string
+                required: true
+              - name: setup
+                label: Camera configuration
+                type: select
+                required: true
+                options:
+                  values:
+                    - name: front-rear
+                      label: "Front + rear"
+                    - name: front-only
+                      label: "Front only"
+              - name: type
+                label: Camera type (e.g. 2CH)
+                type: string
+              - name: price
+                label: Camera price excluding fitting (£)
+                type: number
+                required: true
+              - name: image
+                label: Product image
+                type: image
+                options:
+                  media: dashcam_images
+              - name: enquiry_model
+                label: Model name included in enquiries
+                type: string
+                description: Use the full model and configuration name, e.g. Thinkware U3000 2CH.
+              - name: enabled
+                label: Show on website
+                type: boolean
+      - name: dashcam_thinkware
+        label: "Thinkware"
+        type: file
+        path: content/catalogue-thinkware.json
+        format: json
+        fields:
+          - name: products
+            label: "Camera models"
+            type: object
+            list:
+              collapsible:
+                collapsed: true
+                summary: "{model} — £{price}"
+            fields:
+              - name: model
+                label: Model
+                type: string
+                required: true
+              - name: setup
+                label: Camera configuration
+                type: select
+                required: true
+                options:
+                  values:
+                    - name: front-rear
+                      label: "Front + rear"
+                    - name: front-only
+                      label: "Front only"
+              - name: type
+                label: Camera type (e.g. 2CH)
+                type: string
+              - name: price
+                label: Camera price excluding fitting (£)
+                type: number
+                required: true
+              - name: image
+                label: Product image
+                type: image
+                options:
+                  media: dashcam_images
+              - name: enquiry_model
+                label: Model name included in enquiries
+                type: string
+                description: Use the full model and configuration name, e.g. Thinkware U3000 2CH.
+              - name: enabled
+                label: Show on website
+                type: boolean
+      - name: dashcam_finevu
+        label: "FineVu"
+        type: file
+        path: content/catalogue-finevu.json
+        format: json
+        fields:
+          - name: products
+            label: "Camera models"
+            type: object
+            list:
+              collapsible:
+                collapsed: true
+                summary: "{model} — £{price}"
+            fields:
+              - name: model
+                label: Model
+                type: string
+                required: true
+              - name: setup
+                label: Camera configuration
+                type: select
+                required: true
+                options:
+                  values:
+                    - name: front-rear
+                      label: "Front + rear"
+                    - name: front-only
+                      label: "Front only"
+              - name: type
+                label: Camera type (e.g. 2CH)
+                type: string
+              - name: price
+                label: Camera price excluding fitting (£)
+                type: number
+                required: true
+              - name: image
+                label: Product image
+                type: image
+                options:
+                  media: dashcam_images
+              - name: enquiry_model
+                label: Model name included in enquiries
+                type: string
+                description: Use the full model and configuration name, e.g. Thinkware U3000 2CH.
+              - name: enabled
+                label: Show on website
+                type: boolean
+  - name: stories
+    label: "Blog & reviews"
+    type: group
+    items:
+      - name: blog_posts
+        label: "Blog posts"
+        type: collection
+        path: _posts
+        format: yaml-frontmatter
+        filename:
+          template: "{date}-{title}.md"
+          field: create
+        view:
+          primary: title
+          sort: date
+          order: desc
+        fields:
+          - name: layout
+            type: string
+            default: blog-post
+            hidden: true
+          - name: title
+            label: Article title
+            type: string
+            required: true
+          - name: date
+            label: Publish date
+            type: date
+            required: true
+            options:
+              format: yyyy-MM-dd
+          - name: category
+            label: Category
+            type: select
+            required: true
+            options:
+              values:
+                - Detailing
+                - Valeting
+                - Ceramic Coatings
+                - Dash Cams
+                - Reverse Cameras
+                - Vehicle Technology
+                - Car Care
+          - name: read_time
+            label: Read time
+            type: string
+            default: 5 min read
+          - name: excerpt
+            label: Card summary
+            type: text
+            required: true
+            description: Short summary used on the Blogs page.
+          - name: image
+            label: Featured image
+            type: image
+            options:
+              media: blog_images
+              path: images/blog
+              extensions: [jpg, jpeg, png, webp]
+              rename: safe
+          - name: image_alt
+            label: Image alt text
+            type: string
+          - name: seo_title
+            label: SEO title
+            type: string
+            description: Optional. Leave blank to use the article title.
+          - name: seo_description
+            label: Meta description
+            type: text
+            description: Aim for roughly 140–160 characters.
+          - name: cta_title
+            label: CTA heading
+            type: string
+            default: Need help with your vehicle?
+          - name: cta_text
+            label: CTA text
+            type: text
+            default: Tell ACAMADI what you need and get a tailored recommendation.
+          - name: cta_link
+            label: CTA link
+            type: string
+            default: /index.html#services
+          - name: cta_label
+            label: CTA button label
+            type: string
+            default: Explore services
+          - name: body
+            label: Article
+            type: rich-text
+            required: true
+            options:
+              format: markdown
+              switcher: true
+              media: false
+      - name: verified_reviews
+        label: "Customer reviews"
+        type: file
+        path: content/reviews.json
+        format: json
+        list: true
+        fields:
+          - name: name
+            label: Reviewer name
+            type: string
+            required: true
+          - name: stars
+            label: Star rating
             type: number
-
-  - name: dashcam_blackvue
-    label: "BlackVue dash cams"
-    type: file
-    path: content/dashcams-blackvue.json
-    format: json
-    list: true
-    fields:
-      - name: model
-        label: Model
-        type: string
-        required: true
-      - name: setup
-        label: Camera configuration
-        type: select
-        required: true
-        options:
-          values:
-            - name: front-rear
-              label: "Front + rear"
-            - name: front-only
-              label: "Front only"
-      - name: type
-        label: Camera type (e.g. 2CH)
-        type: string
-      - name: price
-        label: Camera price excluding fitting (£)
-        type: number
-        required: true
-      - name: image
-        label: Product image
-        type: image
-        options:
-          media: dashcam_images
-      - name: enquiry_model
-        label: Model name included in enquiries
-        type: string
-        description: Use the full model and configuration name, e.g. Thinkware U3000 2CH.
-      - name: enabled
-        label: Show on website
-        type: boolean
-
-  - name: dashcam_thinkware
-    label: "Thinkware dash cams"
-    type: file
-    path: content/dashcams-thinkware.json
-    format: json
-    list: true
-    fields:
-      - name: model
-        label: Model
-        type: string
-        required: true
-      - name: setup
-        label: Camera configuration
-        type: select
-        required: true
-        options:
-          values:
-            - name: front-rear
-              label: "Front + rear"
-            - name: front-only
-              label: "Front only"
-      - name: type
-        label: Camera type (e.g. 2CH)
-        type: string
-      - name: price
-        label: Camera price excluding fitting (£)
-        type: number
-        required: true
-      - name: image
-        label: Product image
-        type: image
-        options:
-          media: dashcam_images
-      - name: enquiry_model
-        label: Model name included in enquiries
-        type: string
-        description: Use the full model and configuration name, e.g. Thinkware U3000 2CH.
-      - name: enabled
-        label: Show on website
-        type: boolean
-
-  - name: dashcam_finevu
-    label: "FineVu dash cams"
-    type: file
-    path: content/dashcams-finevu.json
-    format: json
-    list: true
-    fields:
-      - name: model
-        label: Model
-        type: string
-        required: true
-      - name: setup
-        label: Camera configuration
-        type: select
-        required: true
-        options:
-          values:
-            - name: front-rear
-              label: "Front + rear"
-            - name: front-only
-              label: "Front only"
-      - name: type
-        label: Camera type (e.g. 2CH)
-        type: string
-      - name: price
-        label: Camera price excluding fitting (£)
-        type: number
-        required: true
-      - name: image
-        label: Product image
-        type: image
-        options:
-          media: dashcam_images
-      - name: enquiry_model
-        label: Model name included in enquiries
-        type: string
-        description: Use the full model and configuration name, e.g. Thinkware U3000 2CH.
-      - name: enabled
-        label: Show on website
-        type: boolean
-
-
-  - name: verified_reviews
-    label: "Verified customer reviews"
-    type: file
-    path: content/reviews.json
-    format: json
-    list: true
-    fields:
-      - name: name
-        label: Reviewer name
-        type: string
-        required: true
-      - name: stars
-        label: Star rating
-        type: number
-        required: true
-      - name: body
-        label: Verified review text
-        type: text
-        description: Only enter reviews genuinely submitted by customers. Preserve their original wording.
+            required: true
+          - name: body
+            label: Verified review text
+            type: text
+            description: Only enter reviews genuinely submitted by customers. Preserve their original wording.
 
 settings:
   content:
