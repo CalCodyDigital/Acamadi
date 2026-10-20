@@ -65,14 +65,14 @@
       /^[a-zA-Z0-9_./%-]+$/.test(value);
     const heroImage = data.hero_photo;
     if (safeImage(heroImage)) {
-      const img = "/" + heroImage.replace(/^\\//, "");
+      const img = heroImage;
       const heroBg = el(".hero-bg");
       if (heroBg) heroBg.style.backgroundImage =
         "linear-gradient(90deg, rgba(31,45,103,.96),rgba(31,45,103,.28)),url(" + JSON.stringify(img) + ")";
     }
     const showcaseImage = data.showcase_photo;
     if (safeImage(showcaseImage)) {
-      const img = "/" + showcaseImage.replace(/^\\//, "");
+      const img = showcaseImage;
       const target = el(".showcase-image");
       if (target) target.style.backgroundImage =
         "linear-gradient(180deg,rgba(0,0,0,.02),rgba(0,0,0,.18)),url(" + JSON.stringify(img) + ")";
