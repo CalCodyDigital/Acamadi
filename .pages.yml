@@ -577,6 +577,26 @@ content:
         label: Show on website
         type: boolean
 
+  - name: verified_reviews
+    label: "Verified customer reviews"
+    type: file
+    path: content/reviews.json
+    format: json
+    list: true
+    fields:
+      - name: name
+        label: Reviewer name
+        type: string
+        required: true
+      - name: stars
+        label: Star rating
+        type: number
+        required: true
+      - name: body
+        label: Verified review text
+        type: text
+        description: Only enter reviews genuinely submitted by customers. Preserve their original wording.
+
 settings:
   content:
     merge: true
