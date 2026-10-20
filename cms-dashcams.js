@@ -7,9 +7,9 @@
   if (!grids["front-rear"] || !grids["front-only"]) return;
   try {
     const brandFiles = [
-      ["BlackVue", "/content/dashcams-blackvue.json"],
-      ["Thinkware", "/content/dashcams-thinkware.json"],
-      ["FineVu", "/content/dashcams-finevu.json"]
+      ["BlackVue", "/content/catalogue-blackvue.json"],
+      ["Thinkware", "/content/catalogue-thinkware.json"],
+      ["FineVu", "/content/catalogue-finevu.json"]
     ];
     const responses = await Promise.all(brandFiles.map(([,path]) => fetch(path, {cache:"no-cache"})));
     if (responses.some(r => !r.ok)) throw new Error("One or more brand catalogues unavailable");
