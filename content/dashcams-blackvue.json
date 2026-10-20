@@ -1,82 +1,84 @@
-[
-  {
-    "brand": "BlackVue",
-    "model": "DR970 LTE",
-    "type": "2CH",
-    "setup": "front-rear",
-    "price": 679,
-    "image": "/images/dashcams/blackvue-dr970-lte-2ch.webp",
-    "enquiry_model": "BlackVue DR970 LTE 2CH",
-    "enabled": true
-  },
-  {
-    "brand": "BlackVue",
-    "model": "DR970X",
-    "type": "2CH",
-    "setup": "front-rear",
-    "price": 529,
-    "image": "/images/dashcams/blackvue-dr970x-2ch.webp",
-    "enquiry_model": "BlackVue DR970X 2CH",
-    "enabled": true
-  },
-  {
-    "brand": "BlackVue",
-    "model": "DR770 LTE",
-    "type": "2CH",
-    "setup": "front-rear",
-    "price": 529,
-    "image": "/images/dashcams/blackvue-dr770-lte-2ch.webp",
-    "enquiry_model": "BlackVue DR770 LTE 2CH",
-    "enabled": true
-  },
-  {
-    "brand": "BlackVue",
-    "model": "DR770X",
-    "type": "2CH",
-    "setup": "front-rear",
-    "price": 399,
-    "image": "/images/dashcams/blackvue-dr770x-2ch.webp",
-    "enquiry_model": "BlackVue DR770X 2CH",
-    "enabled": true
-  },
-  {
-    "brand": "BlackVue",
-    "model": "DR590X",
-    "type": "2CH",
-    "setup": "front-rear",
-    "price": 299,
-    "image": "/images/dashcams/blackvue-dr590x-2ch.webp",
-    "enquiry_model": "BlackVue DR590X 2CH",
-    "enabled": true
-  },
-  {
-    "brand": "BlackVue",
-    "model": "DR970X",
-    "type": "1CH",
-    "setup": "front-only",
-    "price": 429,
-    "image": "/images/dashcams/blackvue-dr970x-1ch.webp",
-    "enquiry_model": "BlackVue DR970X 1CH",
-    "enabled": true
-  },
-  {
-    "brand": "BlackVue",
-    "model": "DR770X",
-    "type": "1CH",
-    "setup": "front-only",
-    "price": 299,
-    "image": "/images/dashcams/blackvue-dr770x-1ch.webp",
-    "enquiry_model": "BlackVue DR770X 1CH",
-    "enabled": true
-  },
-  {
-    "brand": "BlackVue",
-    "model": "DR590X",
-    "type": "1CH",
-    "setup": "front-only",
-    "price": 199,
-    "image": "/images/dashcams/blackvue-dr590x-1ch.webp",
-    "enquiry_model": "BlackVue DR590X 1CH",
-    "enabled": true
-  }
-]
+{
+  "products": [
+    {
+      "brand": "BlackVue",
+      "model": "DR970 LTE",
+      "type": "2CH",
+      "setup": "front-rear",
+      "price": 679,
+      "image": "/images/dashcams/blackvue-dr970-lte-2ch.webp",
+      "enquiry_model": "BlackVue DR970 LTE 2CH",
+      "enabled": true
+    },
+    {
+      "brand": "BlackVue",
+      "model": "DR970X",
+      "type": "2CH",
+      "setup": "front-rear",
+      "price": 529,
+      "image": "/images/dashcams/blackvue-dr970x-2ch.webp",
+      "enquiry_model": "BlackVue DR970X 2CH",
+      "enabled": true
+    },
+    {
+      "brand": "BlackVue",
+      "model": "DR770 LTE",
+      "type": "2CH",
+      "setup": "front-rear",
+      "price": 529,
+      "image": "/images/dashcams/blackvue-dr770-lte-2ch.webp",
+      "enquiry_model": "BlackVue DR770 LTE 2CH",
+      "enabled": true
+    },
+    {
+      "brand": "BlackVue",
+      "model": "DR770X",
+      "type": "2CH",
+      "setup": "front-rear",
+      "price": 399,
+      "image": "/images/dashcams/blackvue-dr770x-2ch.webp",
+      "enquiry_model": "BlackVue DR770X 2CH",
+      "enabled": true
+    },
+    {
+      "brand": "BlackVue",
+      "model": "DR590X",
+      "type": "2CH",
+      "setup": "front-rear",
+      "price": 299,
+      "image": "/images/dashcams/blackvue-dr590x-2ch.webp",
+      "enquiry_model": "BlackVue DR590X 2CH",
+      "enabled": true
+    },
+    {
+      "brand": "BlackVue",
+      "model": "DR970X",
+      "type": "1CH",
+      "setup": "front-only",
+      "price": 429,
+      "image": "/images/dashcams/blackvue-dr970x-1ch.webp",
+      "enquiry_model": "BlackVue DR970X 1CH",
+      "enabled": true
+    },
+    {
+      "brand": "BlackVue",
+      "model": "DR770X",
+      "type": "1CH",
+      "setup": "front-only",
+      "price": 299,
+      "image": "/images/dashcams/blackvue-dr770x-1ch.webp",
+      "enquiry_model": "BlackVue DR770X 1CH",
+      "enabled": true
+    },
+    {
+      "brand": "BlackVue",
+      "model": "DR590X",
+      "type": "1CH",
+      "setup": "front-only",
+      "price": 199,
+      "image": "/images/dashcams/blackvue-dr590x-1ch.webp",
+      "enquiry_model": "BlackVue DR590X 1CH",
+      "enabled": true
+    }
+  ]
+}
