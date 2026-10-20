@@ -16,19 +16,17 @@
     const hero = el(".hero");
     set(".eyebrow", "hero_eyebrow", hero);
     set(".hero-copy", "hero_intro", hero);
-    // Preserve the original two-tone hero heading design.
+    // Two independent content fields preserve the original coloured design.
     const heading = el("h1", hero);
-    if (heading && typeof data.hero_heading === "string") {
-      const text = data.hero_heading.trim();
-      const comma = text.indexOf(",");
-      const first = comma >= 0 ? text.slice(0, comma + 1) : text;
-      const second = comma >= 0 ? text.slice(comma + 1).trim() : "";
+    if (heading && (typeof data.hero_heading_white === "string" || typeof data.hero_heading_yellow === "string")) {
+      const first = data.hero_heading_white || "";
+      const second = data.hero_heading_yellow || "";
       heading.replaceChildren(document.createTextNode(first));
       if (second) {
         heading.append(document.createElement("br"));
-        const accented = document.createElement("span");
-        accented.textContent = second;
-        heading.append(accented);
+        const accent = document.createElement("span");
+        accent.textContent = second;
+        heading.append(accent);
       }
     }
     const services = el("#services");
