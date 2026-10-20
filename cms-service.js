@@ -22,6 +22,12 @@
       }
       if(typeof data.hero_yellow==='string'&&data.hero_yellow)set('span','hero_yellow',heading);
     }
+    const prices=Array.isArray(data.prices)?data.prices:[];
+    const priceNodes=[...document.querySelectorAll('.package-price strong,.valet-price strong,.dashcam-price strong,.reverse-price strong,.technology-price strong')];
+    prices.forEach((entry,i)=>{
+      const amount=Number(entry?.amount);
+      if(priceNodes[i]&&Number.isFinite(amount)&&amount>=0)priceNodes[i].textContent='£'+amount.toLocaleString('en-GB');
+    });
     const intro=one('.service-intro-grid');
     if(intro){
       set('.eyebrow','intro_label',intro);
