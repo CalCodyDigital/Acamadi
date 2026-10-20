@@ -6,5 +6,19 @@
   "intro_label": "Better rear visibility",
   "intro_heading": "Parking made simpler.",
   "intro_paragraph_1": "A reverse camera gives you an additional view of the area immediately behind your vehicle when reversing or manoeuvring into tighter spaces.",
-  "intro_paragraph_2": "ACAMADI can install suitable camera systems with wiring routed neatly through the vehicle for a professional finished appearance."
+  "intro_paragraph_2": "ACAMADI can install suitable camera systems with wiring routed neatly through the vehicle for a professional finished appearance.",
+  "prices": [
+    {
+      "label": "Reverse Camera Installation",
+      "amount": 125
+    },
+    {
+      "label": "Front Dash Cam + Reverse Camera",
+      "amount": 175
+    },
+    {
+      "label": "Need a Display Too?",
+      "amount": 75
+    }
+  ]
 }
