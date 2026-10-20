@@ -6,5 +6,23 @@
   "intro_label": "Clean professional installation",
   "intro_heading": "No dangling cables. No guesswork.",
   "intro_paragraph_1": "A dash cam should look like it belongs in the vehicle, not like something has simply been plugged in and draped around the interior.",
-  "intro_paragraph_2": "ACAMADI installs and hardwires dash cams with discreet cable routing and can talk you through the system once installation is complete."
+  "intro_paragraph_2": "ACAMADI installs and hardwires dash cams with discreet cable routing and can talk you through the system once installation is complete.",
+  "prices": [
+    {
+      "label": "Front Dash Cam",
+      "amount": 75
+    },
+    {
+      "label": "Front & Rear",
+      "amount": 100
+    },
+    {
+      "label": "Front + Reverse Camera",
+      "amount": 175
+    },
+    {
+      "label": "Dash Cam Removal",
+      "amount": 50
+    }
+  ]
 }
