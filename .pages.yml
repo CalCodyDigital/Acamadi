@@ -7,6 +7,14 @@ media:
     extensions: [jpg, jpeg, png, webp]
     categories: [image]
 
+  - name: site_media
+    label: Website images
+    input: images/cms
+    output: /images/cms
+    rename: safe
+    extensions: [jpg, jpeg, png, webp]
+    categories: [image]
+
 content:
   - name: blog_posts
     label: Blog posts
@@ -100,6 +108,128 @@ content:
           format: markdown
           switcher: true
           media: false
+
+  - name: home_content
+    label: "Homepage"
+    type: file
+    path: content/home.json
+    format: json
+    fields:
+      - name: hero_eyebrow
+        label: "Hero Eyebrow"
+        type: string
+      - name: hero_heading
+        label: "Hero Heading"
+        type: string
+      - name: hero_intro
+        label: "Hero Intro"
+        type: text
+      - name: hero_photo
+        label: "Hero Photo"
+        type: image
+        options:
+          media: site_media
+  - name: services_content
+    label: "Services overview"
+    type: file
+    path: content/services.json
+    format: json
+    fields:
+      - name: services_eyebrow
+        label: "Services Eyebrow"
+        type: string
+      - name: services_heading
+        label: "Services Heading"
+        type: string
+      - name: services_intro
+        label: "Services Intro"
+        type: text
+      - name: service_1_title
+        label: "Service 1 Title"
+        type: string
+      - name: service_1_description
+        label: "Service 1 Description"
+        type: text
+      - name: service_2_title
+        label: "Service 2 Title"
+        type: string
+      - name: service_2_description
+        label: "Service 2 Description"
+        type: text
+      - name: service_3_title
+        label: "Service 3 Title"
+        type: string
+      - name: service_3_description
+        label: "Service 3 Description"
+        type: text
+      - name: service_4_title
+        label: "Service 4 Title"
+        type: string
+      - name: service_4_description
+        label: "Service 4 Description"
+        type: text
+      - name: service_5_title
+        label: "Service 5 Title"
+        type: string
+      - name: service_5_description
+        label: "Service 5 Description"
+        type: text
+      - name: service_6_title
+        label: "Service 6 Title"
+        type: string
+      - name: service_6_description
+        label: "Service 6 Description"
+        type: text
+  - name: about_content
+    label: "About & showcase"
+    type: file
+    path: content/about.json
+    format: json
+    fields:
+      - name: about_eyebrow
+        label: "About Eyebrow"
+        type: string
+      - name: about_heading
+        label: "About Heading"
+        type: string
+      - name: about_paragraph_1
+        label: "About Paragraph 1"
+        type: text
+      - name: about_paragraph_2
+        label: "About Paragraph 2"
+        type: text
+      - name: showcase_eyebrow
+        label: "Showcase Eyebrow"
+        type: string
+      - name: showcase_heading
+        label: "Showcase Heading"
+        type: string
+      - name: showcase_text
+        label: "Showcase Text"
+        type: text
+      - name: showcase_photo
+        label: "Showcase Photo"
+        type: image
+        options:
+          media: site_media
+  - name: areas_content
+    label: "Service area & CTA"
+    type: file
+    path: content/areas.json
+    format: json
+    fields:
+      - name: area_heading
+        label: "Area Heading"
+        type: string
+      - name: area_text
+        label: "Area Text"
+        type: text
+      - name: cta_heading
+        label: "Cta Heading"
+        type: string
+      - name: cta_text
+        label: "Cta Text"
+        type: text
 
 settings:
   content:
