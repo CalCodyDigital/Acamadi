@@ -14,8 +14,9 @@
     const responses = await Promise.all(brandFiles.map(([,path]) => fetch(path, {cache:"no-cache"})));
     if (responses.some(r => !r.ok)) throw new Error("One or more brand catalogues unavailable");
     const records = await Promise.all(responses.map(r => r.json()));
-    if (records.some(items => !Array.isArray(items))) throw new Error("Invalid brand catalogue");
-    const items = records.flatMap((entries, index) =>
+    const normalized = records.map(result => Array.isArray(result) ? result : result.products);
+    if (normalized.some(items => !Array.isArray(items))) throw new Error("Invalid brand catalogue");
+    const items = normalized.flatMap((entries, index) =>
       entries.map(entry => ({...entry, brand: brandFiles[index][0]}))
     );
     const brands = new Set(["blackvue","thinkware","finevu"]);
