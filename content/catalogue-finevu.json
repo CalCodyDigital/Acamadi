@@ -1,0 +1,58 @@
+{
+  "products": [
+    {
+      "model": "GX1600",
+      "setup": "front-rear",
+      "type": "2CH",
+      "price": 449,
+      "image": "/images/dashcams/finevu-gx1600-2ch.webp",
+      "enquiry_model": "FineVu GX1600 2CH",
+      "enabled": true
+    },
+    {
+      "model": "GX1100 4K",
+      "setup": "front-rear",
+      "type": "2CH",
+      "price": 389,
+      "image": "/images/dashcams/finevu-gx1100-4k-2ch.webp",
+      "enquiry_model": "FineVu GX1100 4K 2CH",
+      "enabled": true
+    },
+    {
+      "model": "GX1100",
+      "setup": "front-rear",
+      "type": "2CH",
+      "price": 289,
+      "image": "/images/dashcams/finevu-gx1100-2ch.webp",
+      "enquiry_model": "FineVu GX1100 2CH",
+      "enabled": true
+    },
+    {
+      "model": "GX400 bundle",
+      "setup": "front-rear",
+      "type": "Front + Rear",
+      "price": 249,
+      "image": "/images/dashcams/finevu-gx400-2ch.webp",
+      "enquiry_model": "FineVu GX400 bundle Front + Rear",
+      "enabled": true
+    },
+    {
+      "model": "GX36",
+      "setup": "front-rear",
+      "type": "Front + Rear",
+      "price": 189,
+      "image": "/images/dashcams/finevu-gx36-2ch.webp",
+      "enquiry_model": "FineVu GX36 Front + Rear",
+      "enabled": true
+    },
+    {
+      "model": "GX400",
+      "setup": "front-only",
+      "type": "1CH",
+      "price": 199,
+      "image": "/images/dashcams/finevu-gx400-1ch.webp",
+      "enquiry_model": "FineVu GX400 1CH",
+      "enabled": true
+    }
+  ]
+}
