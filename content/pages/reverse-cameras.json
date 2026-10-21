@@ -10,15 +10,18 @@
   "prices": [
     {
       "label": "Reverse Camera Installation",
-      "amount": 125
+      "amount": 125,
+      "description": "Professional installation of a reversing camera with discreet cable routing and system setup."
     },
     {
       "label": "Front Dash Cam + Reverse Camera",
-      "amount": 175
+      "amount": 175,
+      "description": "Combine a front-facing dash cam installation with a dedicated reverse camera in one appointment."
     },
     {
       "label": "Need a Display Too?",
-      "amount": 75
+      "amount": 75,
+      "description": "ACAMADI also installs aftermarket multimedia equipment where a suitable display or system upgrade is required."
     }
   ]
 }
