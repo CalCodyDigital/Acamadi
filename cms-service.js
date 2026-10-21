@@ -25,6 +25,14 @@
     const prices=Array.isArray(data.prices)?data.prices:[];
     const priceNodes=[...document.querySelectorAll('.package-price strong,.valet-price strong,.dashcam-price strong,.reverse-price strong,.technology-price strong')];
     prices.forEach((entry,i)=>{
+      const priceBox=priceNodes[i]?.parentElement;
+      const card=priceBox?.parentElement;
+      if(card){
+        const h3=card.querySelector('h3');
+        const description=priceBox.nextElementSibling;
+        if(h3 && typeof entry.label==='string') h3.textContent=entry.label;
+        if(description?.matches('p') && typeof entry.description==='string') description.textContent=entry.description;
+      }
       const amount=Number(entry?.amount);
       if(priceNodes[i]&&Number.isFinite(amount)&&amount>=0)priceNodes[i].textContent='£'+amount.toLocaleString('en-GB');
     });
