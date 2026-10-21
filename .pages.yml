@@ -200,7 +200,10 @@ content:
               - name: label
                 label: Package name
                 type: string
-                  - name: amount
+              - name: description
+                label: Package description
+                type: text
+              - name: amount
                 label: Starting price (£)
                 type: number
       - name: ceramic_coatings_page
@@ -245,7 +248,10 @@ content:
               - name: label
                 label: Package name
                 type: string
-                  - name: amount
+              - name: description
+                label: Package description
+                type: text
+              - name: amount
                 label: Starting price (£)
                 type: number
       - name: valeting_page
@@ -290,7 +296,10 @@ content:
               - name: label
                 label: Package name
                 type: string
-                  - name: amount
+              - name: description
+                label: Package description
+                type: text
+              - name: amount
                 label: Starting price (£)
                 type: number
       - name: dash_cam_installation_page
@@ -335,7 +344,10 @@ content:
               - name: label
                 label: Package name
                 type: string
-                  - name: amount
+              - name: description
+                label: Package description
+                type: text
+              - name: amount
                 label: Starting price (£)
                 type: number
       - name: reverse_cameras_page
@@ -380,7 +392,10 @@ content:
               - name: label
                 label: Package name
                 type: string
-                  - name: amount
+              - name: description
+                label: Package description
+                type: text
+              - name: amount
                 label: Starting price (£)
                 type: number
       - name: vehicle_technology_page
@@ -426,7 +441,10 @@ content:
               - name: label
                 label: Package name
                 type: string
-                  - name: amount
+              - name: description
+                label: Package description
+                type: text
+              - name: amount
                 label: Starting price (£)
                 type: number
   - name: cameras
