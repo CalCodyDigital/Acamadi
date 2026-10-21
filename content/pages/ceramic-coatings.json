@@ -9,16 +9,19 @@
   "intro_paragraph_2": "As well as adding gloss, the hydrophobic finish helps repel water and contamination, making the vehicle easier to maintain between washes.",
   "prices": [
     {
-      "label": "Level 1",
-      "amount": 499
+      "label": "Easier maintenance Hydrophobic behaviour helps water and contamination release more easily from the surface. 02 Paint protection Adds a protective layer against environmental contamination and chemical exposure. 03 Greater gloss Enhances depth and reflection for a smoother, more refined-looking finish. 04 Longer lasting Offers considerably longer-lasting protection than a conventional wax or sealant. Ceramic coating packages Choose your level of protection. The right package depends on the age, condition and finish of your vehicle as well as the level of preparation required before coating. 01 Up to 18 months Ceramic coating level 1 Level 1",
+      "amount": 499,
+      "description": "A deep exterior clean and preparation followed by ceramic protection for vehicles that do not require significant paint correction."
     },
     {
       "label": "Level 2",
-      "amount": 749
+      "amount": 749,
+      "description": "Combines paint refinement with ceramic protection for customers wanting the finish improved before the coating is applied."
     },
     {
       "label": "Level 3",
-      "amount": 899
+      "amount": 899,
+      "description": "A more intensive preparation and refinement package before coating for customers seeking the highest level of finish."
     }
   ]
 }
