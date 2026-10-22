@@ -12,31 +12,61 @@
       "label": "Basic Interior",
       "description": "A straightforward interior reset for cars that need regular cleaning rather than a deep detail.",
       "amount": 30,
-      "bullets": []
+      "bullets": [
+        "Seats, carpets and mats vacuumed",
+        "Dashboard and console wiped down",
+        "Door trims cleaned",
+        "Steering wheel cleaned",
+        "Interior glass and mirrors"
+      ]
     },
     {
       "label": "Steam Interior",
       "description": "A more detailed interior service using steam alongside the standard interior cleaning process.",
       "amount": 100,
-      "bullets": []
+      "bullets": [
+        "Detailed interior vacuum",
+        "Interior surface cleaning",
+        "Headlining vacuumed",
+        "Steam cleaning",
+        "Interior glass and mirrors"
+      ]
     },
     {
       "label": "Wash n Go",
       "description": "A proper maintenance wash for keeping the exterior of your vehicle clean without unnecessary extras.",
       "amount": 40,
-      "bullets": []
+      "bullets": [
+        "Pre-wash",
+        "Snow foam",
+        "Safe contact wash",
+        "Spotless water rinse",
+        "Vehicle dried where required"
+      ]
     },
     {
       "label": "Shine",
       "description": "A more complete exterior valet with additional wheel cleaning, tar removal and protection.",
       "amount": 80,
-      "bullets": []
+      "bullets": [
+        "Safe exterior wash",
+        "Alloy barrels cleaned",
+        "Tar removal",
+        "Exterior finishing",
+        "Sealant lasting up to 3 months"
+      ]
     },
     {
       "label": "This is a Test Item ",
       "description": "Just a test to see how adding in another service option would look. ",
       "amount": 250,
-      "bullets": []
+      "bullets": [
+        "Regular scheduled visits",
+        "Interior and exterior options",
+        "Frequency selected to suit you",
+        "Long-term maintenance",
+        "Additional service benefits"
+      ]
     }
   ]
 }
