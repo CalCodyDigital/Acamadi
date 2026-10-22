@@ -33,6 +33,14 @@
         if(h3 && typeof entry.label==='string') h3.textContent=entry.label;
         if(description?.matches('p') && typeof entry.description==='string') description.textContent=entry.description;
       }
+      if(card && Array.isArray(entry.bullets)) {
+        const list=card.querySelector('ul');
+        if(list){
+          list.replaceChildren(...entry.bullets.filter(x=>typeof x==='string'&&x.trim()).map(bullet=>{
+            const li=document.createElement('li'); li.textContent=bullet; return li;
+          }));
+        }
+      }
       const amount=Number(entry?.amount);
       if(priceNodes[i]&&Number.isFinite(amount)&&amount>=0)priceNodes[i].textContent='£'+amount.toLocaleString('en-GB');
     });
