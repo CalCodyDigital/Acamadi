@@ -10,23 +10,28 @@
   "prices": [
     {
       "label": "Basic Interior",
-      "amount": 30,
-      "description": "A straightforward interior reset for cars that need regular cleaning rather than a deep detail."
+      "description": "A straightforward interior reset for cars that need regular cleaning rather than a deep detail.",
+      "amount": 30
     },
     {
       "label": "Steam Interior",
-      "amount": 100,
-      "description": "A more detailed interior service using steam alongside the standard interior cleaning process."
+      "description": "A more detailed interior service using steam alongside the standard interior cleaning process.",
+      "amount": 100
     },
     {
       "label": "Wash n Go",
-      "amount": 40,
-      "description": "A proper maintenance wash for keeping the exterior of your vehicle clean without unnecessary extras."
+      "description": "A proper maintenance wash for keeping the exterior of your vehicle clean without unnecessary extras.",
+      "amount": 40
     },
     {
       "label": "Shine",
-      "amount": 80,
-      "description": "A more complete exterior valet with additional wheel cleaning, tar removal and protection."
+      "description": "A more complete exterior valet with additional wheel cleaning, tar removal and protection.",
+      "amount": 80
+    },
+    {
+      "label": "This is a Test Item ",
+      "description": "Just a test to see how adding in another service option would look. ",
+      "amount": 250
     }
   ]
 }
