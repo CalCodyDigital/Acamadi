@@ -11,7 +11,8 @@
     {
       "label": "Multimedia Systems",
       "amount": 75,
-      "description": "Aftermarket head units and multimedia systems installed neatly and configured for your vehicle."
+      "description": "Aftermarket head units and multimedia systems installed neatly and configured for your vehicle.",
+      "bullets": []
     }
   ]
 }
