@@ -42,7 +42,18 @@
         }
       }
       const amount=Number(entry?.amount);
-      if(priceNodes[i]&&Number.isFinite(amount)&&amount>=0)priceNodes[i].textContent='£'+amount.toLocaleString('en-GB');
+      if(priceNodes[i]&&Number.isFinite(amount)&&amount>=0){
+        const strong=priceNodes[i];
+        strong.textContent='£'+amount.toLocaleString('en-GB');
+        // The original Refresh/quote card has no "From" label.
+        // When given a numeric CMS starting price, present it like other packages.
+        if(priceBox && !priceBox.querySelector('span')){
+          const prefix=document.createElement('span');
+          prefix.textContent='From';
+          priceBox.insertBefore(prefix,strong);
+          priceBox.classList.remove('valet-price-text');
+        }
+      }
     });
     const intro=one('.service-intro-grid');
     if(intro){
