@@ -12,25 +12,49 @@
       "label": "I need a new camera Browse ACAMADI's current range from BlackVue, Thinkware and FineVu, then enquire about the camera and professional installation together. View available dash cams → 02 I already have one Send the make and model of your dash cam along with your vehicle details and ACAMADI can confirm the fitting requirements. Ask about fitting → Clean professional installation No dangling cables. No guesswork. A dash cam should look like it belongs in the vehicle, not like something has simply been plugged in and draped around the interior. ACAMADI installs and hardwires dash cams with discreet cable routing and can talk you through the system once installation is complete. Installation pricing Choose your setup. Already have a dash cam? ACAMADI can install your existing unit. If you still need one, they can also advise on suitable options. 01 Front Single camera Front Dash Cam",
       "amount": 75,
       "description": "A professional installation for a front-facing dash cam with tidy cable routing.",
-      "bullets": []
+      "bullets": [
+        "Front camera installation",
+        "Discreet cable routing",
+        "Hardwiring where required",
+        "Positioning and setup",
+        "System walkthrough"
+      ]
     },
     {
       "label": "Front & Rear",
       "amount": 100,
       "description": "Front and rear camera installation with cables routed neatly through the vehicle.",
-      "bullets": []
+      "bullets": [
+        "Front camera installation",
+        "Discreet cable routing",
+        "Hardwiring where required",
+        "Positioning and setup",
+        "System walkthrough"
+      ]
     },
     {
       "label": "Front + Reverse Camera",
       "amount": 175,
       "description": "Combine front-facing recording with a dedicated reversing camera installation.",
-      "bullets": []
+      "bullets": [
+        "Front camera installation",
+        "Rear camera installation",
+        "Discreet cable routing",
+        "Hardwiring where required",
+        "System walkthrough"
+      ]
     },
     {
       "label": "Dash Cam Removal",
       "amount": 50,
       "description": "Have an existing system professionally removed before selling or changing your vehicle.",
-      "bullets": []
+      "bullets": [
+        "Front dash cam installation",
+        "Reverse camera installation",
+        "Discreet wiring",
+        "System setup",
+        "Walkthrough after fitting"
+      ]
     }
   ]
 }
