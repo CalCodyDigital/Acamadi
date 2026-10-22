@@ -206,6 +206,11 @@ content:
               - name: amount
                 label: Starting price (£)
                 type: number
+              - name: bullets
+                label: Included features / bullet points
+                type: string
+                list: true
+                description: Add, edit or remove benefit bullet points for this package.
       - name: ceramic_coatings_page
         label: "Ceramic coatings"
         type: file
@@ -254,6 +259,11 @@ content:
               - name: amount
                 label: Starting price (£)
                 type: number
+              - name: bullets
+                label: Included features / bullet points
+                type: string
+                list: true
+                description: Add, edit or remove benefit bullet points for this package.
       - name: valeting_page
         label: "Valeting"
         type: file
@@ -302,6 +312,11 @@ content:
               - name: amount
                 label: Starting price (£)
                 type: number
+              - name: bullets
+                label: Included features / bullet points
+                type: string
+                list: true
+                description: Add, edit or remove benefit bullet points for this package.
       - name: dash_cam_installation_page
         label: "Dash cam fitting"
         type: file
@@ -350,6 +365,11 @@ content:
               - name: amount
                 label: Starting price (£)
                 type: number
+              - name: bullets
+                label: Included features / bullet points
+                type: string
+                list: true
+                description: Add, edit or remove benefit bullet points for this package.
       - name: reverse_cameras_page
         label: "Reverse cameras"
         type: file
@@ -398,6 +418,11 @@ content:
               - name: amount
                 label: Starting price (£)
                 type: number
+              - name: bullets
+                label: Included features / bullet points
+                type: string
+                list: true
+                description: Add, edit or remove benefit bullet points for this package.
       - name: vehicle_technology_page
         label: "Vehicle technology"
         type: file
@@ -447,6 +472,11 @@ content:
               - name: amount
                 label: Starting price (£)
                 type: number
+              - name: bullets
+                label: Included features / bullet points
+                type: string
+                list: true
+                description: Add, edit or remove benefit bullet points for this package.
   - name: cameras
     label: "Dash cam catalogue"
     type: group
